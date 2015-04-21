@@ -1,0 +1,299 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9265,        290]
+NotebookOptionsPosition[      7706,        232]
+NotebookOutlinePosition[      8119,        248]
+CellTagsIndexPosition[      8076,        245]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["AboluteTime\:63d0\:901f\:6280\:5de7", "Title",
+ CellChangeTimes->{{3.633912416633895*^9, 3.6339124230024147`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["@2015-02-26", "Chapter",
+ CellChangeTimes->{{3.6339128235107737`*^9, 3.63391282767072*^9}}],
+
+Cell["\<\
+\:4e4b\:524d\:5728\:4e00\:4e2a\:7edf\:8ba1\:62a5\:8868\:4ea7\:51fa\:7684\:9879\
+\:76ee\:4e2d\:6d89\:53ca\:5230\:65e5\:5fd7\:6570\:636e\:7684\:5904\:7406\:53ca\
+\:65f6\:95f4\:6233\:7684\:8f6c\:6362\:ff0c\:4e00\:5f00\:59cb\:4ee3\:7801\:5e76\
+\:6ca1\:6709\:4f18\:5316\:ff0c\:4ea7\:751f\:4e00\:6b21\:62a5\:8868\:89811\
+\:5c0f\:65f6\:ff0c\:540e\:6765\:5728\:4f18\:5316\:4ee3\:7801\:65f6\:53d1\:73b0\
+\:539f\:6765\:5927\:90e8\:5206\:65f6\:95f4\:90fd\:6d88\:8017\:5728\:4e86\:65f6\
+\:95f4\:6233\:8f6c\:6362\:76f8\:5173\:ff0c\:5982AbsoluteTime\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.633912445655013*^9, 3.633912569159465*^9}, {
+  3.63391277906266*^9, 3.6339128070471163`*^9}}],
+
+Cell["\:4f7f\:7528\:6700\:7b80\:5355\:7684\:65b9\:5f0f\:ff0c\:8f6c\:6362\
+100000\:4e2a\:65f6\:95f4\:6233\:ff0c\:5f53\:7136\:4e0d\:600e\:4e48\:6162\:ff0c\
+\:4f46\:662f\:5982\:679cBinomial[10000,2]\:5462\:3002\:3002\:3002", "Text",
+ CellChangeTimes->{{3.633912573184315*^9, 3.6339126103586397`*^9}}],
+
+Cell["\<\
+I have a job concerning the conversion of timestamp, and I found AbsoluteTime \
+is too slow.
+For example, in a sample data scale [2MB], 130000 lines of the DateString.\
+\>", "Text",
+ CellChangeTimes->{{3.6326284517396045`*^9, 3.6326284826514688`*^9}, {
+   3.6326285174270673`*^9, 3.6326285782117205`*^9}, 3.633912317609791*^9, {
+   3.6339126468730707`*^9, 3.6339127082725344`*^9}}],
+
+Cell["ParallelMap speed up by 3times.", "Text",
+ CellChangeTimes->{{3.63262858178725*^9, 3.6326285988913603`*^9}, 
+   3.633912726097155*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"timeList", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{"\"\<2015-01-11 19:08:43\>\"", ",", 
+     RowBox[{"{", "130000", "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.632628276543644*^9, 3.6326282926780252`*^9}, 
+   3.6326283467322817`*^9, 3.632628395591907*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"t1", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AbsoluteTime", "/@", "timeList"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t2", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"t2", "-", "t1"}]}], "Input",
+ CellChangeTimes->{{3.6326282943592343`*^9, 3.6326283266210318`*^9}}],
+
+Cell[BoxData["76.0067444`9.03136712860944"], "Output",
+ CellChangeTimes->{3.632628333116627*^9, 3.6326283782626357`*^9, 
+  3.632628479724399*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"t1", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ParallelMap", "[", 
+   RowBox[{"AbsoluteTime", ",", "timeList"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t2", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"t2", "-", "t1"}]}], "Input",
+ CellChangeTimes->{{3.632628415581031*^9, 3.6326284281008863`*^9}}],
+
+Cell[BoxData["24.8162154`8.545250547910863"], "Output",
+ CellChangeTimes->{3.632628538905934*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:6838\:5fc3\:6570\:91cf", "Section",
+ CellChangeTimes->{{3.632628771346829*^9, 3.632628773645455*^9}, {
+  3.633912387642367*^9, 3.633912392513816*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\:5f53\:6838\:5fc3\:6570\:91cf\:5927\:4e8e6\:65f6\:ff0c\:901f\:5ea6\
+\:63d0\:5347\:5e76\:4e0d\:660e\:663e\:3002", "Subsection",
+ CellChangeTimes->{{3.6339123963625407`*^9, 3.6339124054449725`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CloseKernels", "[", "]"}], ";", 
+  RowBox[{"LaunchKernels", "[", "6", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.632628776867734*^9, 3.632628776985818*^9}, {
+  3.6326288343734074`*^9, 3.6326288624282503`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"t1", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ParallelMap", "[", 
+   RowBox[{"AbsoluteTime", ",", "timeList"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t2", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"t2", "-", "t1"}]}], "Input"],
+
+Cell[BoxData["14.3631594`8.307764978063245"], "Output",
+ CellChangeTimes->{
+  3.63262873338698*^9, {3.632628807788604*^9, 3.6326288820651445`*^9}, 
+   3.6326289666819935`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CloseKernels", "[", "]"}], ";", 
+  RowBox[{"LaunchKernels", "[", "10", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.6326286751392756`*^9, 3.6326286809343963`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"t1", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ParallelMap", "[", 
+   RowBox[{"AbsoluteTime", ",", "timeList"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t2", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"t2", "-", "t1"}]}], "Input"],
+
+Cell[BoxData["13.2613791`8.273103688143292"], "Output",
+ CellChangeTimes->{3.63262873338698*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:4f7f\:7528\:6280\:5de7", "Section",
+ CellChangeTimes->{{3.6326295225994177`*^9, 3.6326295267523518`*^9}}],
+
+Cell["\:63d0\:534710\:500d\:901f\:5ea6", "Text",
+ CellChangeTimes->{{3.6326295994158106`*^9, 3.6326296039209957`*^9}}],
+
+Cell[TextData[ButtonBox["refer@se",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://mathematica.stackexchange.com/questions/24389/how-can-this-\
+absolutetime-call-be-made-faster"], None},
+ ButtonNote->
+  "http://mathematica.stackexchange.com/questions/24389/how-can-this-\
+absolutetime-call-be-made-faster"]], "Text",
+ CellChangeTimes->{{3.63391228862325*^9, 3.633912295677246*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"t1", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ParallelMap", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"AbsoluteTime", "[", 
+      RowBox[{"ToExpression", "[", 
+       RowBox[{"StringSplit", "[", 
+        RowBox[{"#", ",", 
+         RowBox[{"{", 
+          RowBox[{"\"\< \>\"", ",", "\"\<-\>\"", ",", "\"\<:\>\""}], "}"}]}], 
+        "]"}], "]"}], "]"}], "&"}], ",", "timeList"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t2", "=", 
+   RowBox[{"SessionTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"t2", "-", "t1"}]}], "Input",
+ CellChangeTimes->{{3.632629544337803*^9, 3.632629589939042*^9}}],
+
+Cell[BoxData["1.2478828`7.246688796557071"], "Output",
+ CellChangeTimes->{{3.6326295747002654`*^9, 3.6326295915281677`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Notebook2GitHubPage", "[", 
+  RowBox[{
+   RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+   RowBox[{"\"\<class\>\"", "\[Rule]", "\"\<Mathematica\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6339127379665794`*^9, 3.633912752481838*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1520, 663},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->FrontEnd`FileName[{"New folder"}, "GitHubPost.nb", 
+  CharacterEncoding -> "CP936"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 120, 1, 47, "Title"],
+Cell[CellGroupData[{
+Cell[725, 27, 97, 1, 95, "Chapter"],
+Cell[825, 30, 681, 10, 111, "Text"],
+Cell[1509, 42, 297, 3, 74, "Text"],
+Cell[1809, 47, 391, 7, 111, "Text"],
+Cell[2203, 56, 140, 2, 74, "Text"],
+Cell[2346, 60, 307, 7, 71, "Input"],
+Cell[CellGroupData[{
+Cell[2678, 71, 416, 10, 192, "Input"],
+Cell[3097, 83, 145, 2, 71, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3279, 90, 455, 12, 192, "Input"],
+Cell[3737, 104, 97, 1, 71, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3871, 110, 158, 2, 76, "Section"],
+Cell[CellGroupData[{
+Cell[4054, 116, 203, 2, 56, "Subsection"],
+Cell[4260, 120, 247, 5, 71, "Input"],
+Cell[CellGroupData[{
+Cell[4532, 129, 387, 11, 192, "Input"],
+Cell[4922, 142, 175, 3, 71, "Output"]
+}, Open  ]],
+Cell[5112, 148, 199, 4, 71, "Input"],
+Cell[CellGroupData[{
+Cell[5336, 156, 387, 11, 192, "Input"],
+Cell[5726, 169, 96, 1, 71, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5883, 177, 113, 1, 76, "Section"],
+Cell[5999, 180, 118, 1, 74, "Text"],
+Cell[6120, 183, 389, 8, 74, "Text"],
+Cell[CellGroupData[{
+Cell[6534, 195, 723, 20, 232, "Input"],
+Cell[7260, 217, 124, 1, 71, "Output"]
+}, Open  ]],
+Cell[7399, 221, 267, 6, 71, "Input"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

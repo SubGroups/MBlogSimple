@@ -1,0 +1,743 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     33222,        734]
+NotebookOptionsPosition[     32471,        704]
+NotebookOutlinePosition[     32923,        721]
+CellTagsIndexPosition[     32880,        718]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Wolfram-Alpha\:67e5\:8be2\:8f93\:5165\:53c2\:6570\:8bbe\:5b9a", "Title",
+ CellChangeTimes->{{3.592779516727384*^9, 3.5927795359415007`*^9}}],
+
+Cell[TextData[{
+ "What you need is ",
+ Cell["InputAssumption", "InputInline"]
+}], "Text",
+ CellChangeTimes->{{3.590925399039871*^9, 3.590925409166451*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WolframAlpha", "[", 
+  RowBox[{"\"\<Euler Rotation\>\"", ",", "\"\<InputAssumptions\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.590925351906172*^9, 3.5909253651839314`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"*FP.EulerRotation.EAS-_Euler121%3Ae121\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler123%3Ae123\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler131%3Ae131\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler132%3Ae132\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler212%3Ae212\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler213%3Ae213\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler231%3Ae231\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler232%3Ae232\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler312%3Ae312\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler312%3Ae313\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler321%3Ae321\"\>", 
+     ",", "\<\"*FP.EulerRotation.EAS-_Euler323%3Ae323\"\>"}], "}"}], ",", 
+   RowBox[{"{", "\<\"*F.EulerRotation.th1-_30+%C2%B0\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\"*F.EulerRotation.th2-_15+%C2%B0\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\"*F.EulerRotation.th3-_20+%C2%B0\"\>", "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.5909253676730742`*^9, 3.5909254291085925`*^9, 
+  3.5927795651311555`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WolframAlpha", "[", "    ", "\n", "    ", 
+  RowBox[{"\"\<Euler Rotation\>\"", ",", "\n", "    ", 
+   RowBox[{"InputAssumptions", "->", 
+    RowBox[{"{", "\"\<*FP.EulerRotation.EAS-_Euler121%3Ae123\>\"", "}"}]}]}], 
+  "\n", "]"}]], "Input",
+ CellChangeTimes->{{3.59092545368*^9, 3.5909254572162023`*^9}, {
+  3.590925532683524*^9, 3.590925548360421*^9}}],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = "Euler Rotation", Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, 
+    InputAssumptions -> {"*FP.EulerRotation.EAS-_Euler121%3Ae123"}}, 
+   Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Input information", "scanner" -> "Formula", "id" -> 
+     "Input", "position" -> "100", "error" -> "false", "numsubpods" -> "1"}, {
+    
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            StyleBox[
+             TagBox[
+              GridBox[{{
+                 TagBox[
+                  PaneBox[
+                   StyleBox["\"rigid body rotation\"", 
+                    GrayLevel[0], StripOnInput -> False], 
+                   BaseStyle -> {{
+                    Alignment -> Left, BaselinePosition -> Baseline, 
+                    FontColor -> GrayLevel[0.3]}, 
+                    LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Left}, BaselinePosition -> Baseline], 
+                  $CellContext`TagBoxWrapper["Label"]], "\[SpanFromLeft]"}, {
+                 TagBox[
+                  PaneBox[
+                  "\"Euler rotation sequence\"", 
+                   BaseStyle -> {{
+                    Alignment -> Left, BaselinePosition -> Baseline, 
+                    FontColor -> GrayLevel[0.3]}, 
+                    LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Left}, BaselinePosition -> Baseline], 
+                  $CellContext`TagBoxWrapper["Label"]], 
+                 
+                 TemplateBox[{
+                  "\"roll\[Hyphen]pitch\[Hyphen]yaw \
+(1\[Hyphen]2\[Hyphen]3)\""}, "RowDefault"]}, {
+                 TagBox[
+                  PaneBox[
+                  "\"first rotation\"", 
+                   BaseStyle -> {{
+                    Alignment -> Left, BaselinePosition -> Baseline, 
+                    FontColor -> GrayLevel[0.3]}, 
+                    LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Left}, BaselinePosition -> Baseline], 
+                  $CellContext`TagBoxWrapper["Label"]], 
+                 TemplateBox[{
+                   StyleBox[
+                    TagBox[
+                    RowBox[{
+                    TagBox[
+                    TagBox[
+                    RowBox[{
+                    TagBox["30", 
+                    $CellContext`TagBoxWrapper["StringBoxes" -> "30"]], 
+                    "\[NoBreak]", 
+                    StyleBox[
+                    RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}], 
+                    FontFamily -> "Helvetica", FontSize -> Smaller]}], 
+                    Identity], #& , SyntaxForm -> Dot], "  ", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"degrees\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    FontFamily :> $CellContext`$UnitFontFamily, FontSize -> 
+                    Smaller, 
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}, StripOnInput -> False]}], "Unit", SyntaxForm -> Dot], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0, ZeroWidthTimes -> False]}, "RowDefault"]}, {
+                 TagBox[
+                  PaneBox[
+                  "\"second rotation\"", 
+                   BaseStyle -> {{
+                    Alignment -> Left, BaselinePosition -> Baseline, 
+                    FontColor -> GrayLevel[0.3]}, 
+                    LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Left}, BaselinePosition -> Baseline], 
+                  $CellContext`TagBoxWrapper["Label"]], 
+                 TemplateBox[{
+                   StyleBox[
+                    TagBox[
+                    RowBox[{
+                    TagBox[
+                    TagBox[
+                    RowBox[{
+                    TagBox["15", 
+                    $CellContext`TagBoxWrapper["StringBoxes" -> "15"]], 
+                    "\[NoBreak]", 
+                    StyleBox[
+                    RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}], 
+                    FontFamily -> "Helvetica", FontSize -> Smaller]}], 
+                    Identity], #& , SyntaxForm -> Dot], "  ", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"degrees\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    FontFamily :> $CellContext`$UnitFontFamily, FontSize -> 
+                    Smaller, 
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}, StripOnInput -> False]}], "Unit", SyntaxForm -> Dot], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0, ZeroWidthTimes -> False]}, "RowDefault"]}, {
+                 TagBox[
+                  PaneBox[
+                  "\"third rotation\"", 
+                   BaseStyle -> {{
+                    Alignment -> Left, BaselinePosition -> Baseline, 
+                    FontColor -> GrayLevel[0.3]}, 
+                    LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Left}, BaselinePosition -> Baseline], 
+                  $CellContext`TagBoxWrapper["Label"]], 
+                 TemplateBox[{
+                   StyleBox[
+                    TagBox[
+                    RowBox[{
+                    TagBox[
+                    TagBox[
+                    RowBox[{
+                    TagBox["20", 
+                    $CellContext`TagBoxWrapper["StringBoxes" -> "20"]], 
+                    "\[NoBreak]", 
+                    StyleBox[
+                    RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}], 
+                    FontFamily -> "Helvetica", FontSize -> Smaller]}], 
+                    Identity], #& , SyntaxForm -> Dot], "  ", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"degrees\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    FontFamily :> $CellContext`$UnitFontFamily, FontSize -> 
+                    Smaller, 
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}, StripOnInput -> False]}], "Unit", SyntaxForm -> Dot], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0, ZeroWidthTimes -> False]}, "RowDefault"]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left}, "Rows" -> {{Baseline}}, 
+                 "ItemsIndexed" -> {{1, 1} -> {Left, Baseline}, {1, 2} -> {
+                    Left, Baseline}}}, AutoDelete -> False, 
+               GridBoxBackground -> {
+                "Columns" -> {{None}}, "Rows" -> {{None}}, 
+                 "ItemsIndexed" -> {{{1, 1}, {1, 2}} -> 
+                   GrayLevel[0.9568627450980393]}}, 
+               GridBoxFrame -> {"Columns" -> {{True}}, "Rows" -> {{True}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {"Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, 
+               FrameStyle -> GrayLevel[0.84], BaselinePosition -> Automatic, 
+               AllowScriptLevelChange -> False], "Grid"], 
+             LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, StripOnInput -> 
+             False], TraditionalForm]], "Output"]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,numberdata,quantitydata"}]}]}]\
+, Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "Direction cosine matrix", "scanner" -> "Formula", "id" -> 
+     "DirectionCosineMatrix", "position" -> "200", "error" -> "false", 
+     "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TemplateBox[{"C", "=", 
+              RowBox[{"(", "\[NoBreak]", 
+                
+                GridBox[{{
+                  "0.90767337119036861636800495034549385309`3.", 
+                   "0.41780330612687077707079197352868504822`3.", 
+                   
+                   RowBox[{
+                    "-", "0.03961626713065596883112107207125518471`3."}]}, {
+                   
+                   RowBox[{
+                    "-", "0.33036608954935209325753930897917598486`3."}], 
+                   "0.7695370178986852272018381881935056299`3.", 
+                   "0.54650802826625333175059040513588115573`3."}, {
+                  "0.25881904510252068396525260141061153263`3.", 
+                   
+                   RowBox[{
+                    "-", "0.48296291314453410059570614976109936833`3."}], 
+                   "0.83651630373780783145321038318797945976`3."}}, 
+                 RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> 
+                 Baseline, ColumnAlignments -> Center], "\[NoBreak]", ")"}]}, 
+             "RowDefault"], TraditionalForm]], "Output"]}], 
+       XMLElement[
+       "dataformats", {}, {"plaintext,computabledata,formatteddata"}]}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Show symbolic form", "input" -> 
+         "DirectionCosineMatrix__Show symbolic form"}, {}]}]}], 
+   Typeset`pod3$$ = XMLElement[
+   "pod", {"title" -> "Principal rotation parameters", "scanner" -> "Formula",
+      "id" -> "PrincipalRotationParameters", "position" -> "300", "error" -> 
+     "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            StyleBox[
+             TagBox[
+              GridBox[{{"\[CapitalPhi]", 
+                 StyleBox[
+                  TagBox[
+                   RowBox[{
+                    TagBox[
+                    TagBox[
+                    RowBox[{
+                    TagBox["40.8", 
+                    $CellContext`TagBoxWrapper["StringBoxes" -> "40.8"]], 
+                    "\[NoBreak]", 
+                    StyleBox[
+                    RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}], 
+                    FontFamily -> "Helvetica", FontSize -> Smaller]}], 
+                    Identity], #& , SyntaxForm -> Dot], "  ", 
+                    StyleBox[
+                    
+                    RowBox[{
+                    "\"(\"", "\[NoBreak]", "\"degrees\"", "\[NoBreak]", 
+                    "\")\""}], {
+                    FontFamily :> $CellContext`$UnitFontFamily, FontSize -> 
+                    Smaller, 
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}, StripOnInput -> False]}], "Unit", SyntaxForm -> Dot], 
+                  LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                  0, ZeroWidthTimes -> False]}, {
+                 OverscriptBox[
+                  StyleBox[
+                  "\"e\"", Bold, FontSlant -> Plain, StripOnInput -> False], 
+                  "^"], 
+                 TagBox[
+                  RowBox[{"(", "\[NoBreak]", 
+                    
+                    GridBox[{{
+                    "0.78757131195053364791647254605777561665`3."}, {
+                    "0.22831056315756945163109037366666598246`3."}, {
+                    "0.57236851358472584649916825583204627037`3."}}, 
+                    RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> 
+                    Baseline, ColumnAlignments -> Center], "\[NoBreak]", 
+                    ")"}], Identity]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left}, "Rows" -> {{Baseline}}}, 
+               AutoDelete -> False, 
+               GridBoxBackground -> {"Columns" -> {{None}}}, 
+               GridBoxFrame -> {"Columns" -> {{True}}, "Rows" -> {{True}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {"Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, 
+               FrameStyle -> GrayLevel[0.84], BaselinePosition -> Automatic, 
+               AllowScriptLevelChange -> False], "Grid"], 
+             LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, StripOnInput -> 
+             False], TraditionalForm]], "Output"]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,formuladata,numberdata,\
+quantitydata"}]}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Show symbolic form", "input" -> 
+         "PrincipalRotationParameters__Show symbolic form"}, {}]}]}], 
+   Typeset`pod4$$ = XMLElement[
+   "pod", {"title" -> "Euler parameters (quaternions)", "scanner" -> 
+     "Formula", "id" -> "EulerParameters (quaternions)", "position" -> "400", 
+     "error" -> "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            StyleBox[
+             TagBox[
+              GridBox[{{
+                 SubscriptBox["\[Beta]", "0"], 
+                 TagBox[
+                 "0.93724685820050390727686817626818083227`3.", Identity]}, {
+                 SubscriptBox["\[Beta]", "1"], 
+                 TagBox[
+                 "0.27459973122432013159510688637965358794`3.", Identity]}, {
+                 SubscriptBox["\[Beta]", "2"], 
+                 TagBox[
+                 "0.07960424450132773388499884958946495317`3.", Identity]}, {
+                 SubscriptBox["\[Beta]", "3"], 
+                 TagBox[
+                 "0.19956572516889889423730153339420212433`3.", Identity]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left}, "Rows" -> {{Baseline}}}, 
+               AutoDelete -> False, 
+               GridBoxBackground -> {"Columns" -> {{None}}}, 
+               GridBoxFrame -> {"Columns" -> {{True}}, "Rows" -> {{True}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {"Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, 
+               FrameStyle -> GrayLevel[0.84], BaselinePosition -> Automatic, 
+               AllowScriptLevelChange -> False], "Grid"], 
+             LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, StripOnInput -> 
+             False], TraditionalForm]], "Output"]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,formuladata,numberdata"}]}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Show symbolic form", "input" -> 
+         "EulerParameters (quaternions)__Show symbolic form"}, {}]}]}], 
+   Typeset`pod5$$ = XMLElement[
+   "pod", {"title" -> "Cayley-Klein parameters", "scanner" -> "Formula", "id" -> 
+     "CayleyKleinParameters", "position" -> "500", "error" -> "false", 
+     "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            StyleBox[
+             TagBox[
+              GridBox[{{"\[Alpha]", 
+                 TagBox[
+                  
+                  RowBox[{
+                   "0.93724685820050390727686817626818083227`3.\
+1408865948548645", "+", 
+                    
+                    RowBox[{
+                    "0.19956572516889889423730153339420212433`2.\
+4691185561280635", " ", "\[ImaginaryI]"}]}], Identity]}, {"\[Beta]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"-", 
+                    
+                    RowBox[{
+                    "0.07960424450132773388499884958946495317`2.\
+595228996481209"}]}], "+", 
+                    
+                    RowBox[{
+                    "0.27459973122432013159510688637965358794`3.\
+1329928793454793", " ", "\[ImaginaryI]"}]}], Identity]}, {"\[Gamma]", 
+                 TagBox[
+                  
+                  RowBox[{
+                   "0.07960424450132773388499884958946495317`2.\
+595228996481209", "+", 
+                    
+                    RowBox[{
+                    "0.27459973122432013159510688637965358794`3.\
+1329928793454793", " ", "\[ImaginaryI]"}]}], Identity]}, {"\[Delta]", 
+                 TagBox[
+                  
+                  RowBox[{
+                   "0.93724685820050390727686817626818083227`3.\
+1408865948548645", "-", 
+                    
+                    RowBox[{
+                    "0.19956572516889889423730153339420212433`2.\
+4691185561280635", " ", "\[ImaginaryI]"}]}], Identity]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left}, "Rows" -> {{Baseline}}}, 
+               AutoDelete -> False, 
+               GridBoxBackground -> {"Columns" -> {{None}}}, 
+               GridBoxFrame -> {"Columns" -> {{True}}, "Rows" -> {{True}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {"Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, 
+               FrameStyle -> GrayLevel[0.84], BaselinePosition -> Automatic, 
+               AllowScriptLevelChange -> False], "Grid"], 
+             LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, StripOnInput -> 
+             False], TraditionalForm]], "Output"]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,formuladata,numberdata"}]}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Show symbolic form", "input" -> 
+         "CayleyKleinParameters__Show symbolic form"}, {}]}]}], 
+   Typeset`pod6$$ = XMLElement[
+   "pod", {"title" -> "Classical Rodrigues Parameters", "scanner" -> 
+     "Formula", "id" -> "ClassicalRodriguesParameters", "position" -> "600", 
+     "error" -> "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            StyleBox[
+             TagBox[
+              GridBox[{{
+                 SubscriptBox["q", "1"], 
+                 TagBox[
+                 "0.29298549130540313401027674444776494056`3.", Identity]}, {
+                 SubscriptBox["q", "2"], 
+                 TagBox[
+                 "0.08493412787124873797317547996499342844`3.", Identity]}, {
+                 SubscriptBox["q", "3"], 
+                 TagBox[
+                 "0.21292760111467462502687908454390708357`3.", Identity]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left}, "Rows" -> {{Baseline}}}, 
+               AutoDelete -> False, 
+               GridBoxBackground -> {"Columns" -> {{None}}}, 
+               GridBoxFrame -> {"Columns" -> {{True}}, "Rows" -> {{True}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {"Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, 
+               FrameStyle -> GrayLevel[0.84], BaselinePosition -> Automatic, 
+               AllowScriptLevelChange -> False], "Grid"], 
+             LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, StripOnInput -> 
+             False], TraditionalForm]], "Output"]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,formuladata,numberdata"}]}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Show symbolic form", "input" -> 
+         "ClassicalRodriguesParameters__Show symbolic form"}, {}]}]}], 
+   Typeset`pod7$$ = XMLElement[
+   "pod", {"title" -> "Modified Rodrigues Parameters", "scanner" -> "Formula",
+      "id" -> "ModifiedRodriguesParameters", "position" -> "700", "error" -> 
+     "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            StyleBox[
+             TagBox[
+              GridBox[{{
+                 SubscriptBox["\[Sigma]", "1"], 
+                 TagBox[
+                 "0.14174741337786661565800727657915558666`3.", Identity]}, {
+                 SubscriptBox["\[Sigma]", "2"], 
+                 TagBox[
+                 "0.04109143043095272312958954330497363117`3.", Identity]}, {
+                 SubscriptBox["\[Sigma]", "3"], 
+                 TagBox[
+                 "0.10301512392399708728518703537702094764`3.", Identity]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left}, "Rows" -> {{Baseline}}}, 
+               AutoDelete -> False, 
+               GridBoxBackground -> {"Columns" -> {{None}}}, 
+               GridBoxFrame -> {"Columns" -> {{True}}, "Rows" -> {{True}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {"Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, 
+               FrameStyle -> GrayLevel[0.84], BaselinePosition -> Automatic, 
+               AllowScriptLevelChange -> False], "Grid"], 
+             LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, StripOnInput -> 
+             False], TraditionalForm]], "Output"]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,formuladata,numberdata"}]}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Show symbolic form", "input" -> 
+         "ModifiedRodriguesParameters__Show symbolic form"}, {}]}]}], 
+   Typeset`aux1$$ = {True, False, {False}, True}, Typeset`aux2$$ = {
+   True, False, {False}, True}, Typeset`aux3$$ = {True, False, {False}, True},
+    Typeset`aux4$$ = {True, False, {False}, True}, Typeset`aux5$$ = {
+   True, False, {False}, True}, Typeset`aux6$$ = {True, False, {False}, True},
+    Typeset`aux7$$ = {True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
+   Typeset`nonpods$$ = {
+    XMLElement["assumptions", {"count" -> "4"}, {
+      XMLElement[
+      "assumption", {
+       "type" -> "FormulaVariable", "desc" -> "Euler rotation sequence", 
+        "current" -> "2", "count" -> "12"}, {
+        XMLElement[
+        "value", {
+         "name" -> "Euler121:e121", "desc" -> 
+          "roll\[Hyphen]pitch\[Hyphen]roll (1\[Hyphen]2\[Hyphen]1)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler121%3Ae121"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler123:e123", "desc" -> 
+          "roll\[Hyphen]pitch\[Hyphen]yaw (1\[Hyphen]2\[Hyphen]3)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler123%3Ae123"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler131:e131", "desc" -> 
+          "roll\[Hyphen]yaw\[Hyphen]roll (1\[Hyphen]3\[Hyphen]1)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler131%3Ae131"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler132:e132", "desc" -> 
+          "roll\[Hyphen]yaw\[Hyphen]pitch (1\[Hyphen]3\[Hyphen]2)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler132%3Ae132"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler212:e212", "desc" -> 
+          "pitch\[Hyphen]roll\[Hyphen]pitch (2\[Hyphen]1\[Hyphen]2)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler212%3Ae212"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler213:e213", "desc" -> 
+          "pitch\[Hyphen]roll\[Hyphen]yaw (2\[Hyphen]1\[Hyphen]3)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler213%3Ae213"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler231:e231", "desc" -> 
+          "pitch\[Hyphen]yaw\[Hyphen]roll (2\[Hyphen]3\[Hyphen]1)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler231%3Ae231"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler232:e232", "desc" -> 
+          "pitch\[Hyphen]yaw\[Hyphen]pitch (2\[Hyphen]3\[Hyphen]2)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler232%3Ae232"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler312:e312", "desc" -> 
+          "yaw\[Hyphen]roll\[Hyphen]pitch (3\[Hyphen]1\[Hyphen]2)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler312%3Ae312"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler312:e313", "desc" -> 
+          "yaw\[Hyphen]roll\[Hyphen]yaw (3\[Hyphen]1\[Hyphen]3)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler312%3Ae313"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler321:e321", "desc" -> 
+          "yaw\[Hyphen]pitch\[Hyphen]roll (3\[Hyphen]2\[Hyphen]1)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler321%3Ae321"}, {}], 
+        XMLElement[
+        "value", {
+         "name" -> "Euler323:e323", "desc" -> 
+          "yaw\[Hyphen]pitch\[Hyphen]yaw (3\[Hyphen]2\[Hyphen]3)", "valid" -> 
+          "true", "input" -> "*FP.EulerRotation.EAS-_Euler323%3Ae323"}, {}]}], 
+      XMLElement[
+      "assumption", {
+       "type" -> "FormulaVariable", "desc" -> "first rotation", "current" -> 
+        "1", "count" -> "1"}, {
+        XMLElement[
+        "value", {
+         "name" -> "EulerRotation.th1", "desc" -> "30 \[Degree]", "valid" -> 
+          "true", "input" -> "*F.EulerRotation.th1-_30+%C2%B0"}, {}]}], 
+      XMLElement[
+      "assumption", {
+       "type" -> "FormulaVariable", "desc" -> "second rotation", "current" -> 
+        "1", "count" -> "1"}, {
+        XMLElement[
+        "value", {
+         "name" -> "EulerRotation.th2", "desc" -> "15 \[Degree]", "valid" -> 
+          "true", "input" -> "*F.EulerRotation.th2-_15+%C2%B0"}, {}]}], 
+      XMLElement[
+      "assumption", {
+       "type" -> "FormulaVariable", "desc" -> "third rotation", "current" -> 
+        "1", "count" -> "1"}, {
+        XMLElement[
+        "value", {
+         "name" -> "EulerRotation.th3", "desc" -> "20 \[Degree]", "valid" -> 
+          "true", "input" -> "*F.EulerRotation.th3-_20+%C2%B0"}, {}]}]}]}, 
+   Typeset`initdone$$ = True, Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> "false", "numpods" -> "7", "datatypes" -> 
+    "Formula", "timedout" -> "", "timedoutpods" -> "", "timing" -> "1.194", 
+    "parsetiming" -> "0.539", "parsetimedout" -> "false", "recalculate" -> "",
+     "id" -> "MSPa35141dbd66i83dfcb05a000044345eae64c076ad", "host" -> 
+    "http://www4c.wolframalpha.com", "server" -> "32", "related" -> 
+    "http://www4c.wolframalpha.com/api/v2/relatedQueries.jsp?id=\
+MSPa35151dbd66i83dfcb05a000021h62ec7903cg7e7&s=32", "version" -> "2.6"}, 
+   Typeset`sessioninfo$$ = {
+   "TimeZone" -> 8., 
+    "Date" -> {2013, 11, 7, 10, 19, 27.8273095`9.197046133859718}, "Line" -> 
+    4, "SessionID" -> 27506730456141478797}, Typeset`showpods$$ = {1, 2, 3, 4,
+    5, 6, 7}, Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, 
+   Typeset`open$$ = False, Typeset`newq$$ = "Euler Rotation"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$, 
+         Typeset`pod5$$, Typeset`pod6$$, Typeset`pod7$$}, {
+        Typeset`aux1$$, Typeset`aux2$$, Typeset`aux3$$, Typeset`aux4$$, 
+         Typeset`aux5$$, Typeset`aux6$$, Typeset`aux7$$}, Typeset`chosen$$, 
+        Typeset`open$$, Typeset`elements$$, Typeset`q$$, Typeset`opts$$, 
+        Typeset`nonpods$$, Typeset`queryinfo$$, Typeset`sessioninfo$$, 
+        Typeset`showpods$$, Typeset`failedpods$$, Typeset`newq$$}]], 
+     StandardForm],
+    ImageSizeCache->{868., {725., 735.}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     Not[Typeset`initdone$$], Null; 
+     WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{
+        Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$, 
+         Typeset`pod5$$, Typeset`pod6$$, Typeset`pod7$$}], 
+       Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = True],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.5927795684793468`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:95ee\:9898", "Subsection",
+ CellChangeTimes->{{3.592779596286957*^9, 3.5927795988070836`*^9}}],
+
+Cell["Alpha\:6709\:6ca1\:6709\:628a\:77e9\:9635\:8f6c\:4e3a\:6b27\:62c9\:89d2\
+\:7684\:529f\:80fd\:5462\:ff1f", "Text",
+ CellChangeTimes->{{3.5927796018632593`*^9, 3.592779619415263*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1536, 663},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification->1.2000000476837158`,
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->FrontEnd`FileName[{"New folder"}, "GitHubPost1.nb", 
+  CharacterEncoding -> "CP936"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 146, 1, 56, "Title"],
+Cell[729, 25, 155, 4, 56, "Text"],
+Cell[CellGroupData[{
+Cell[909, 33, 203, 4, 56, "Input"],
+Cell[1115, 39, 1132, 21, 56, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2284, 65, 377, 7, 56, "Input"],
+Cell[2664, 74, 29450, 616, 56, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32151, 695, 102, 1, 56, "Subsection"],
+Cell[32256, 698, 187, 2, 56, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

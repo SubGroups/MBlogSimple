@@ -1,0 +1,166 @@
+﻿
+<div class="page-header">
+  <h1>{{ page.title }} <small>I love you</small></h1>
+</div>
+
+	<head>
+	
+   <link href="\stylesheets\myStyle.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" media="screen" type="text/css" href="/stylesheets/zoomimage/css/layout.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="/stylesheets/zoomimage/css/zoomimage.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="/stylesheets/zoomimage/css/custom.css" />
+    <script type="text/javascript" src="/stylesheets/zoomimage/js/jquery.js"></script>
+    <script type="text/javascript" src="/stylesheets/zoomimage/js/eye.js"></script>
+    <script type="text/javascript" src="/stylesheets/zoomimage/js/utils.js"></script>
+    <script type="text/javascript" src="/stylesheets/zoomimage/js/zoomimage.js"></script>
+    <script type="text/javascript" src="/stylesheets/zoomimage/js/layout.js"></script>	
+	
+<!--     <script type="text/javascript" src="/Plugins/google-code-prettify/distrib/google-code-prettify/lang-mma.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="/Plugins/google-code-prettify/distrib/google-code-prettify/prettify-mma.css" />
+    <script type="text/javascript" src="/Plugins/google-code-prettify/distrib/google-code-prettify/prettify.js"></script>
+	 </head>
+  <body onload="prettyPrint()"></body> -->
+  
+    </head>
+
+	 <ul class="navigationTabs">
+            <li><a href="#about" rel="about"></a></li>
+        </ul>
+		
+  <div class="row">
+  <div class="span14">
+    {{ content }}
+    <hr>
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><a>Next &rarr;</a>
+      {% endif %}
+      </ul>
+	  
+	  </div>
+	  
+	  
+	<!-- JiaThis Button BEGIN -->
+<!-- 	<div class="jiathis_style">
+	<a class="jiathis_like_tsina"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8">
+	</script> -->
+	<!-- JiaThis Button END -->
+
+    <hr>
+
+
+	</div> 
+	<div class="span4">
+	<h4 class="flip-span4">Published</h4>
+	<div class="date"><span>{{ page.date | date_to_long_string }}</span>
+	</div>
+	
+
+<br><br>
+ 
+  {% unless page.tags == empty %}
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
+    </ul>
+  {% endunless %}  
+  
+    
+  <section>
+
+
+<br>
+
+  
+</section>
+  
+
+
+
+<h4>Categories</h4>
+<ul>
+{% for cat in site.categories %}
+<li class="cat-item cat-item-6"><a href="{{ site.url }}/categories.html#{{ cat[0] }}-ref">{{ cat[0] }}</a></li>
+<br>
+{% endfor %}
+</ul>
+
+<br><br>
+
+  <section id="article">
+  <h4>Recent posts/10</h4>
+<ul>
+    {% for post in site.posts offset: 0 limit: 10 %}
+      <li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	  <br>
+    {% endfor %}
+  </ul>
+</section>
+
+<br><br>
+  <section id="blogroll">
+  <h4>BlogRoll</h4>
+      
+  </section>
+
+
+</div> 
+
+</div>
+
+   <div id="bar-right-top"><br>
+
+   <p> <f>&nbsp&nbsp章节导航Click</f><f class="flip">
+ <img src="/stylesheets/sidebar/bar-side-top-button1.png" alt="button1.png" width="20" height="20" style="vertical-align:middle;" usemap="#map_1" />
+<map name="map_1">
+<area shape="rect" coords="0,18,14,4" title="点击显示/隐藏章节导航" nohref="" />
+</map>
+</f>
+<f class="flip-span4">
+ <img src="/stylesheets/sidebar/bar-side-top-button2.png" alt="button1.png" width="20" height="20" style="vertical-align:middle;" usemap="#map_2" />
+<map name="map_2">
+<area shape="rect" coords="0,18,14,4" title="点击显示/隐藏类目侧边栏span4" nohref="" />
+</map>
+</f>
+</p>
+
+	<br>
+	</div>
+	
+
+
+<!-- 导航栏显示与隐藏 Start -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+$(".flip").click(function(){
+    $("div#bar").slideToggle("slow");
+  }); 
+  
+ $(".flip-span4").click(function(){
+    $(".span4").slideToggle("slow");
+  });
+   
+   //Input单元的点击显示代码
+   $ (".flip-button").click(function(){
+$(this).next().slideToggle("slow");
+});
+
+});
+</script>
+<!-- 导航栏显示与隐藏 END -->
+
+
+

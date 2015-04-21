@@ -1,0 +1,277 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10061,        268]
+NotebookOptionsPosition[      8596,        214]
+NotebookOutlinePosition[      8940,        229]
+CellTagsIndexPosition[      8897,        226]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Help", "Title",
+ CellChangeTimes->{{3.638415404838131*^9, 3.638415406272114*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\:73af\:5883", "Section",
+ CellChangeTimes->{3.638415455133794*^9}],
+
+Cell["\:672c\:7a0b\:5e8f\:5305\:4e3b\:8981\:662f\:4e2a\:4eba\:7b80\:5355\:4f7f\
+\:7528\:4e3a\:76ee\:7684\:ff0c\:4e3b\:8981\:662fWindows 8.1 x64\:4f4d\:4e0b\
+\:7684Mathematica 10.1\:4e0b\:53ef\:7528\:3002", "Subsubsection",
+ CellChangeTimes->{{3.6384154599432087`*^9, 3.638415519108457*^9}}],
+
+Cell["\<\
+\:7ed3\:6784\:975e\:5e38\:7b80\:5355\:ff0c\:6211\:6682\:65f6\:5c31\:4e0d\:7814\
+\:7a76\:5982\:4f55\:66f4\:4e13\:4e1a\:5f97\:81ea\:52a8\:5b89\:88c5\:4e86\:ff0c\
+\:56e0\:4e3a\:8fd8\:6709\:8bb8\:591a\:522b\:7684\:4e8b\:60c5\:8981\:5b8c\:5584\
+\:ff0c\:6bd4\:5982\:4fa7\:8fb9\:680f\:662f\:5982\:6b64\:5f97\:4e11\:3002\:3002\
+\:3002\:56e0\:4e3a\:672c\:8eab\:60f3\:5f04\:597d\:7c7b\:4f3c\:7684\:4e1c\:4e1c\
+\:ff0c\:8981\:6709\:4e00\:5b9a\:7684\:6298\:817e\:7cbe\:795e\:3002\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.638415520269262*^9, 3.638415601463894*^9}, 
+   3.6384167283018136`*^9, {3.6384170231853857`*^9, 3.6384170889030285`*^9}, {
+   3.6384180009381857`*^9, 3.638418031699025*^9}}],
+
+Cell["\:5f53\:7136\:ff0c\:82e5\:6709\:4ec0\:4e48\:95ee\:9898\:ff0c\:53ca\:65f6\
+\:5728\:8bba\:575b\:6216\:7fa4\:91cc\:6216\:90ae\:4ef6\:7b49\:5404\:79cd@\
+\:8054\:7cfb\:5c31\:662f\:3002", "Subsubsection",
+ CellChangeTimes->{{3.6384172462603135`*^9, 3.6384172624188004`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:5982\:4f55\:5b89\:88c5", "Section",
+ CellChangeTimes->{{3.63841544829594*^9, 3.6384154506285944`*^9}}],
+
+Cell["\:624b\:52a8@@", "Text",
+ CellChangeTimes->{{3.6384187647023954`*^9, 3.638418767900649*^9}}],
+
+Cell["\:5bfc\:5165\:51e0\:4e2a\:7a0b\:5e8f\:5305\:80fd\:591f\:4f7f\:7528\:5c31\
+\:884c\:ff0c\:6ce8\:610f\:628a\:6211\:7684\:8def\:5f84\:ff0c\:6539\:6210\:4f60\
+\:7684\:8def\:5f84\:3002", "Text",
+ CellChangeTimes->{{3.6384167341099634`*^9, 3.6384167487203045`*^9}, {
+  3.6384167993502398`*^9, 3.638416808763938*^9}}],
+
+Cell[BoxData[
+ RowBox[{"<<", 
+  "\"\<C:\\\\Users\\\\HyperGroups\\\\Documents\\\\GitHub\\\\MBlogSimple\\\\\
+Packages\\\\MBlogSimple.m\>\""}]], "Input",
+ CellChangeTimes->{{3.6384167507537456`*^9, 3.6384167800335274`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"pathPackage", "=", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{
+    "$UserDocumentsDirectory", ",", 
+     "\"\<GitHub\\\\MBlogSimple\\\\Packages\\\\MBlogSimple.m\>\""}], "}"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.6384168462811337`*^9, 3.638416883498546*^9}}],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\HyperGroups\\\\Documents\\\\GitHub\\\\\
+MBlogSimple\\\\Packages\\\\MBlogSimple.m\"\>"], "Output",
+ CellChangeTimes->{3.6384168511045537`*^9, 3.6384168837467203`*^9}]
+}, Open  ]],
+
+Cell["\:4e00\:822c\:6211\:81ea\:5df1\:7ecf\:5e38\:662f\:628a\:60f3\:542f\:52a8\
+\:52a0\:8f7d\:7684\:7a0b\:5e8f\:5305\:7684<<\:548cPath\:8bbe\:7f6e\:653e\:5728\
+\:8fd9\:91cc\:3002", "Text",
+ CellChangeTimes->{{3.6384169557087965`*^9, 3.6384170062243495`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FileNameJoin", "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "$UserBaseDirectory", ",", "\"\<Kernel\>\"", ",", "\"\<init.m\>\""}], 
+   "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6384168109024386`*^9, 3.6384168231086836`*^9}, {
+  3.6384169059805055`*^9, 3.6384169526266108`*^9}}],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\HyperGroups\\\\AppData\\\\Roaming\\\\\
+Mathematica\\\\Kernel\\\\init.m\"\>"], "Output",
+ CellChangeTimes->{3.638416952890809*^9}]
+}, Open  ]],
+
+Cell["\:66f4\:7ec6\:7684\:ff0c\:6211\:5c31\:653e\:5728Install.nb\:6587\:6863\
+\:4e2d\:3002", "Text",
+ CellChangeTimes->{{3.63841890130518*^9, 3.6384189156563907`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:8bbe\:8ba1", "Section",
+ CellChangeTimes->{{3.6384171091664114`*^9, 3.6384171096517563`*^9}}],
+
+Cell["\<\
+\:4f7f\:7528Mma\:4ea7\:751f\:4e00\:4e9b\:57fa\:7840\:7684HTML\:9875\:9762\
+\:6216HTMLFragment\:ff0c\:5982\:65e5\:5fd7\:ff0cTags\:9875\:9762\:ff0c\:4e3b\
+\:9875\:ff0cBlogRoll\:ff0c\:76ee\:5f55\:5bfc\:822a\:4fa7\:8fb9\:680f\:7b49\
+\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.638417291351318*^9, 3.6384173534473896`*^9}, {
+  3.638417429232608*^9, 3.6384174847309837`*^9}}],
+
+Cell["\<\
+\:7136\:540e\:5408\:5e76\:4e00\:4e9b\:6837\:5f0f\:ff0c\:5982\:4ece\:5404\:5904\
+\:83b7\:53d6\:7684\:ff0c\:5982\:6211\:4f7f\:7528\:7684twitter bootstrap\:4e3b\
+\:9898\:7684\:3002
+\:5236\:4f5c\:6210\:6837\:5f0f\:6a21\:677f\:6587\:4ef6\:ff0c\:5176\:4e2d\:7684\
+\:5177\:4f53\:5185\:5bb9\:5728\:5408\:5e76\:64cd\:4f5c\:65f6\:66ff\:6362\:6210\
+\:6bcf\:6b21\:4ea7\:51fa\:535a\:5ba2\:65f6\:52a8\:6001\:751f\:6210\:7684\:5185\
+\:5bb9\:3002
+\:5982\:6700\:65b0\:7684\:65e5\:5fd7\:5217\:8868\:ff0c\:4e00\:4e9b\:5168\:5c40\
+\:53d8\:91cf\:7684\:66f4\:65b0\:ff0c\:6bd4\:5982\:65e5\:5fd7\:6570\:91cf\:ff0c\
+\:6587\:4ef6\:65e5\:5fd7\:5217\:8868\:ff0c\:5206\:7c7b\:9875\:9762\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.638417481147439*^9, 3.6384175771606956`*^9}, {
+  3.6384177295449996`*^9, 3.638417801542098*^9}}],
+
+Cell["\<\
+\:751f\:6210\:672c\:5730\:7248\:548c\:7ebf\:4e0a\:7248\:4e24\:4e2a\:7248\:672c\
+\:7684\:ff0c\:53ef\:4ee5\:5b9e\:73b0\:7c7b\:4f3cJekyll\:7684\:672c\:5730\:9884\
+\:89c8\:529f\:80fd\:ff0c\:7167\:7740Jekyll\:7f16\:8bd1\:540e\:7684_site\:76ee\
+\:5f55\:4e00\:6837\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.6384175874549856`*^9, 3.6384177207617683`*^9}, {
+  3.638417814764483*^9, 3.638417820499567*^9}}],
+
+Cell["\<\
+\:56e0\:4e3aJekyll\:8fd9\:79cd\:4e1c\:4e1c\:5f88\:5751\:7239\:ff0c\:867d\:7136\
+\:5176\:5b9e\:76ee\:524d\:672c\:6765\:5bf9\:4e8e\:6211\:4e2a\:4eba\:6765\:8bf4\
+\:662f\:6ca1\:6709\:95ee\:9898\:4e86\:ff0c\:4f46\:662f\:8fc7\:53bb\:73a9\:4e86\
+\:4e00\:4e0b\:7684\:603b\:7ed3\:ff1a\:671f\:95f4\:8981\:5b89\:88c5Ruby\:73af\
+\:5883\:ff0cJekyll\:ff0c\:6709\:4e2d\:6587\:89e3\:7801\:76f8\:5173\:95ee\:9898\
+\:7b49\:ff0c\:7136\:540e\:53c8\:4f7f\:7528Liquid\:8bed\:8a00\:7b49\:8f85\:52a9\
+\:4e00\:4e9b\:5168\:5c40\:53d8\:91cf\:7684\:66f4\:65b0\:ff0c\:6bd4\:5982\:65e5\
+\:5fd7\:6570\:91cf\
+\>", "Text",
+ CellChangeTimes->{{3.638417821826507*^9, 3.638417967611546*^9}, {
+  3.6384182419709435`*^9, 3.6384183293409677`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:4f7f\:7528\:65b9\:6cd5", "Section",
+ CellChangeTimes->{{3.6384171011086903`*^9, 3.6384171023225555`*^9}}],
+
+Cell["\<\
+\:5b89\:88c5\:5b8c\:6210\:540e\:ff0cnb2post[]\:6587\:4ef6\:4f1a\:751f\:6210\
+\:4e00\:7bc7\:65e5\:5fd7\:ff0c\:4f7f\:7528GitHub\:5ba2\:6237\:7aef\:540c\:6b65\
+\:5230page\:5206\:652f\:540e\:ff0c\:5c31\:53ef\:4ee5\:8ba9\:522b\:4eba\:770b\
+\:5230\:4e86\:3002
+\:4e3b\:8981\:5b9e\:73b0\:4e86\:ff1a
+1\:56fe\:7247\:6309\:7167\:56fa\:5b9a\:5bbd\:5ea6\:8c03\:6574
+2BlogRoll\:7684\:66f4\:65b0
+3\:76ee\:5f55\:4fa7\:8fb9\:680f\:7684\:66f4\:65b0
+4\:8bc4\:8bba\:6a21\:5757
+5\:4e3b\:9875\:6587\:7ae0\:5217\:8868\:7684\:81ea\:52a8\:66f4\:65b0\
+\>", "Text",
+ CellChangeTimes->{{3.6384183388947515`*^9, 3.638418352208223*^9}, {
+  3.6384183832382326`*^9, 3.638418437464364*^9}, {3.638418503706563*^9, 
+  3.638418604093811*^9}, {3.6384186385538445`*^9, 3.6384186942303643`*^9}, {
+  3.63841874238754*^9, 3.638418754839398*^9}}],
+
+Cell["\<\
+DIY\:6269\:5c55\:ff1a\:4f60\:53ef\:4ee5\:53c2\:7167\:6211\:7684\:51fd\:6570\
+\:ff0c\:628a\:5176\:4ed6\:7684\:76f8\:5e94\:7684js\:4ee3\:7801\:ff0c\:6837\
+\:5f0f\:ff0c\:5e03\:5c40\:529f\:80fd\:7b49\:52a0\:8fdb\:53bb\:ff0c\:6700\:597d\
+\:80fd\:5f04\:5f97\:66f4\:65b9\:4fbf\:ff0c\:76ee\:524d\:7684\:6a21\:5f0f\:66ff\
+\:6362\:7b49\:8bb8\:591a\:5730\:65b9\:90fd\:6ca1\:6709\:4f18\:5316\:8fc7\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.6384184474504547`*^9, 3.6384185016581163`*^9}, {
+  3.6384187053292375`*^9, 3.6384187156435723`*^9}}],
+
+Cell["\:6bd4\:5982\:6807\:7b7e\:4e91\:ff1f\:8bd5\:8bd5WordCloud\:65b0\:529f\
+\:80fd\:55bd", "Text",
+ CellChangeTimes->{{3.6384188279598217`*^9, 3.6384188386003733`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:8054\:7cfb", "Section",
+ CellChangeTimes->{3.6384171134424515`*^9}],
+
+Cell["", "Text"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1536, 663},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 87, 1, 134, "Title"],
+Cell[CellGroupData[{
+Cell[692, 27, 73, 1, 93, "Section"],
+Cell[768, 30, 290, 3, 51, "Subsubsection"],
+Cell[1061, 35, 695, 10, 75, "Subsubsection"],
+Cell[1759, 47, 274, 3, 40, "Subsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2070, 55, 110, 1, 93, "Section"],
+Cell[2183, 58, 98, 1, 45, "Text"],
+Cell[2284, 61, 315, 4, 45, "Text"],
+Cell[2602, 67, 220, 4, 45, "Input"],
+Cell[CellGroupData[{
+Cell[2847, 75, 309, 8, 45, "Input"],
+Cell[3159, 85, 198, 2, 44, "Output"]
+}, Open  ]],
+Cell[3372, 90, 258, 3, 45, "Text"],
+Cell[CellGroupData[{
+Cell[3655, 97, 296, 7, 45, "Input"],
+Cell[3954, 106, 162, 2, 44, "Output"]
+}, Open  ]],
+Cell[4131, 111, 167, 2, 45, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4335, 118, 101, 1, 93, "Section"],
+Cell[4439, 121, 378, 7, 45, "Text"],
+Cell[4820, 130, 806, 13, 102, "Text"],
+Cell[5629, 145, 406, 7, 45, "Text"],
+Cell[6038, 154, 719, 11, 74, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6794, 170, 113, 1, 93, "Section"],
+Cell[6910, 173, 814, 15, 216, "Text"],
+Cell[7727, 190, 538, 8, 74, "Text"],
+Cell[8268, 200, 169, 2, 45, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8474, 207, 75, 1, 93, "Section"],
+Cell[8552, 210, 16, 0, 45, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
