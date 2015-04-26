@@ -6,7 +6,7 @@ MBlogSimple::usage =
         "\:5c06\:7b14\:8bb0\:672c\:751f\:6210Github\:535a\:5ba2\:9875\:9762\:53ca\:4e0a\:4f20GitHub\:7b49";
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*Usage*)
 
 
@@ -236,10 +236,9 @@ Export[StringReplace[indexFile,".old"->""],indexExport,"XML"];
 Options[buildSite]={"force"->False};
 
 
-buildSite[x___,OptionsPattern[]]:=Module[{nb,notebooksImported},
-
-notebooksImported=Import[#,"Notebook"]&/@
-filesSorted[Notebook];
+buildSite[nb0___:0,OptionsPattern[]]:=Module[{nb,notebooksImported},
+recentPostUpdate[];
+notebooksImported=Import[#,"Notebook"]&/@filesSorted[Notebook];
 var[Force]=OptionValue["force"];
 Do[nb=CreateDocument[notebooksImported[[i]]];If[var[Force]==True,nb2Post[nb,"class"->FileNameDrop[filesSortedRelative[Notebook][[i]]],"force"->True],nb2Post[nb,"class"->FileNameDrop[filesSortedRelative[Notebook][[i]]]]];NotebookClose[nb];,{i,Length@notebooksImported}];
 

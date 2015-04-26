@@ -10,36 +10,90 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1828,         57]
-NotebookOptionsPosition[      1514,         42]
-NotebookOutlinePosition[      1782,         55]
-CellTagsIndexPosition[      1739,         52]
+NotebookDataLength[      4226,        125]
+NotebookOptionsPosition[      3481,         94]
+NotebookOutlinePosition[      3825,        109]
+CellTagsIndexPosition[      3782,        106]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell["SubGroupsTest", "Title",
  CellChangeTimes->{{3.6390229290267954`*^9, 3.6390229325893226`*^9}, {
   3.6390229780606656`*^9, 3.639022980059084*^9}}],
+
+Cell[CellGroupData[{
 
 Cell["\:6587\:4ef6\:540d\:548cTitle\:6700\:597d\:53d6\:4e00\:6837\:54e6\:ff0c\
 \:4e0d\:7136\:53ef\:80fd\:6709\:5947\:602a\:7684\:95ee\:9898", "Section",
  CellChangeTimes->{{3.6390229358567305`*^9, 3.6390229361709547`*^9}, {
   3.639022981552146*^9, 3.639022992968255*^9}}],
 
+Cell["\<\
+\:56e0\:4e3a\:6211\:7684\:7a0b\:5e8f\:4e2d\:53d6\:7684\:662fTitle\:6837\:5f0f\
+\:7684\:503c\:ff0c\:800cFileNames\:53d6\:7684\:662f\:672c\:5730\:6587\:4ef6\
+\:540d\:7684\:503c\:ff0c\:800c\:4e24\:8005\:8fdb\:884c\:6bd4\:8f83\:64cd\:4f5c\
+\:65f6\:ff0c\:53ef\:80fd\:4f1a\:6709\:95ee\:9898\:3002\:3002\:3002\:5f53\:7136\
+\:5982\:679c\:8981\:6539\:8fdb\:7684\:8bdd\:ff0c\:6700\:597d\:662f\:7edf\:4e00\
+\:4f7f\:7528\:4e00\:4e2a\:ff0c\:90a3\:53ef\:80fd\:4ee5\:6587\:4ef6\:540d\:4e3a\
+\:51c6\:ff0c\:8fd9\:6837\:7684\:8bdd\:65e5\:5fd7\:7684Title\:53ef\:80fd\:53ef\
+\:4ee5\:53d6\:5f97\:66f4\:968f\:610f\:4e9b\:3002\
+\>", "Text",
+ CellChangeTimes->{{3.639048766335672*^9, 3.6390488543376956`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell["Windows\:7684GitHub\:5728\:7ebf\:5b89\:88c5\:4e0b\:8f7d\:5305\:771f\
 \:662f\:592a\:6162\:4e86\:ff0c\:7b80\:76f4\:5751\:7239", "Section",
  CellChangeTimes->{{3.63902293797023*^9, 3.639022957613162*^9}}],
 
-Cell["11111", "Section",
- CellChangeTimes->{{3.639022971961342*^9, 3.6390229726398225`*^9}}],
+Cell["\:51e0\:5341MB\:7684\:5ba2\:6237\:7aef\:ff0c\:7ecf\:5e38\:4e0b\:4e2a\
+\:51e0MB\:5c31\:65ad\:7ebf\:ff0c\:5509", "Text",
+ CellChangeTimes->{{3.6390488661310463`*^9, 3.639048883945682*^9}}],
 
 Cell[BoxData[
  RowBox[{"<<", 
   "\"\<C:\\\\Users\\\\HyperGroups\\\\Documents\\\\MBlogSimple\\\\Working\\\\\
 Packages\\\\MBlogSimple.m\>\""}]], "Input",
- CellChangeTimes->{{3.639023015016881*^9, 3.6390230374287786`*^9}}]
+ CellChangeTimes->{{3.639023015016881*^9, 3.6390230374287786`*^9}, {
+  3.639048924001095*^9, 3.6390489580012274`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"buildSite", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"\"\<force\>\"", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6390494893094306`*^9, 3.639049490720417*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindFile", "[", "\"\<init.m\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.639049222543618*^9, 3.6390492232831445`*^9}, {
+  3.639049497141982*^9, 3.639049501472043*^9}}],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\HyperGroups\\\\AppData\\\\Roaming\\\\\
+Mathematica\\\\Kernel\\\\init.m\"\>"], "Output",
+ CellChangeTimes->{3.6390495018533154`*^9, 3.6390495471640654`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"%", "//", "SystemOpen"}]], "Input",
+ CellChangeTimes->{{3.639049504117934*^9, 3.6390495087652173`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"SystemOpen", "[", 
+  "\"\<C:\\\\Users\\\\HyperGroups\\\\Documents\\\\MBlogSimple\\\\Working\\\\\
+Packages\\\\MBlogSimple.m\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.639049480973504*^9, 3.639049484482992*^9}, 
+   3.6390495759554873`*^9}]
+}, Open  ]]
+}, Open  ]]
 },
+WindowSize->{1536, 663},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -54,11 +108,25 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 151, 2, 70, "Title"],
-Cell[712, 24, 271, 3, 70, "Section"],
-Cell[986, 29, 207, 2, 70, "Section"],
-Cell[1196, 33, 92, 1, 70, "Section"],
-Cell[1291, 36, 219, 4, 70, "Input"]
+Cell[CellGroupData[{
+Cell[580, 22, 151, 2, 134, "Title"],
+Cell[CellGroupData[{
+Cell[756, 28, 271, 3, 93, "Section"],
+Cell[1030, 33, 695, 10, 74, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1762, 48, 207, 2, 93, "Section"],
+Cell[1972, 52, 192, 2, 45, "Text"],
+Cell[2167, 56, 270, 5, 45, "Input"],
+Cell[2440, 63, 198, 4, 45, "Input"],
+Cell[CellGroupData[{
+Cell[2663, 71, 191, 3, 45, "Input"],
+Cell[2857, 76, 188, 2, 44, "Output"]
+}, Open  ]],
+Cell[3060, 81, 127, 2, 45, "Input"],
+Cell[3190, 85, 263, 5, 45, "Input"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
