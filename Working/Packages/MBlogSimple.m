@@ -65,7 +65,7 @@ Begin["`Private`"];
 inputBox2String=First[FrontEndExecute[FrontEnd`ExportPacket[Cell[BoxData[#],"Input"],"InputText"]]]&;
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*Common*)
 
 
@@ -113,7 +113,7 @@ DeleteDirectory[#2,DeleteContents->True];CopyFile[#1,#2],CopyFile[#1,#2]]&;
 (*\:6b64\:76ee\:5f55\:4e3a\:624b\:52a8\:4fee\:6539\:ff0c\:6216Install\:65f6\:624b\:52a8\:8f93\:5165\:53d8\:91cf\:540e\:81ea\:52a8\:4fee\:6539\:3002*)
 
 
-dirBlogHome[AL]=pathFormatUnix@"C:\\Users\\HyperGroups\\Documents\\GitHub\\MBlogSimple";
+dirBlogHome[AL]=pathFormatUnix@"C:\\Users\\HyperGroups\\Documents\\MBlogSimple";
 
 
 dirBlogPush[AL]=dirBlogHome[AL];

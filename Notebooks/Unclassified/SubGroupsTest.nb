@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4226,        125]
-NotebookOptionsPosition[      3481,         94]
-NotebookOutlinePosition[      3825,        109]
-CellTagsIndexPosition[      3782,        106]
+NotebookDataLength[      4841,        143]
+NotebookOptionsPosition[      4023,        109]
+NotebookOutlinePosition[      4366,        124]
+CellTagsIndexPosition[      4323,        121]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -61,11 +61,26 @@ Packages\\\\MBlogSimple.m\>\""}]], "Input",
  CellChangeTimes->{{3.639023015016881*^9, 3.6390230374287786`*^9}, {
   3.639048924001095*^9, 3.6390489580012274`*^9}}],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
- RowBox[{"buildSite", "[", 
-  RowBox[{"x", ",", 
-   RowBox[{"\"\<force\>\"", "\[Rule]", "True"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.6390494893094306`*^9, 3.639049490720417*^9}}],
+ RowBox[{"buildSite", "[", "x", "]"}]], "Input",
+ CellChangeTimes->{{3.6390494893094306`*^9, 3.639049490720417*^9}, {
+  3.639050311991847*^9, 3.6390503121649857`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Export", "::", "noopen"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot open \
+\[NoBreak]\\!\\(\\\"C:/Users/HyperGroups/Documents/MBlogSimple/Notebooks/\
+Unclassified/SubGroupsTest.nb\\\"\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/noopen\\\", ButtonNote -> \
+\\\"Export::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6390503314466486`*^9}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -92,8 +107,8 @@ Packages\\\\MBlogSimple.m\>\"", "]"}]], "Input",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1536, 663},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1520, 663},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -118,13 +133,16 @@ Cell[CellGroupData[{
 Cell[1762, 48, 207, 2, 93, "Section"],
 Cell[1972, 52, 192, 2, 45, "Text"],
 Cell[2167, 56, 270, 5, 45, "Input"],
-Cell[2440, 63, 198, 4, 45, "Input"],
 Cell[CellGroupData[{
-Cell[2663, 71, 191, 3, 45, "Input"],
-Cell[2857, 76, 188, 2, 44, "Output"]
+Cell[2462, 65, 181, 3, 45, "Input"],
+Cell[2646, 70, 522, 11, 35, "Message"]
 }, Open  ]],
-Cell[3060, 81, 127, 2, 45, "Input"],
-Cell[3190, 85, 263, 5, 45, "Input"]
+Cell[CellGroupData[{
+Cell[3205, 86, 191, 3, 45, "Input"],
+Cell[3399, 91, 188, 2, 44, "Output"]
+}, Open  ]],
+Cell[3602, 96, 127, 2, 45, "Input"],
+Cell[3732, 100, 263, 5, 45, "Input"]
 }, Open  ]]
 }, Open  ]]
 }

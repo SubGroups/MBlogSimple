@@ -9,33 +9,28 @@
  <div class="MyCategory">
   <p class="column">
    <span class="column-element">
-    <div style="background-color:#291e0a">
-     <strong style="font-size:20px;color:#cd9432" />
+    <div style="background-color:#0c1407">
+     <strong style="font-size:20px;color:#3a6222" />
     </div>
    </span>
    <span class="column-element">
-    <div style="background-color:#1f2c12">
-     <strong style="font-size:20px;color:#9ddd5b">Computer</strong>
+    <div style="background-color:#130b14">
+     <strong style="font-size:20px;color:#5e3763">Help</strong>
     </div>
    </span>
    <span class="column-element">
-    <div style="background-color:#102519">
-     <strong style="font-size:20px;color:#4eb97f">Help</strong>
+    <div style="background-color:#0c2328">
+     <strong style="font-size:20px;color:#3eb1ca">History</strong>
     </div>
    </span>
    <span class="column-element">
-    <div style="background-color:#161f03">
-     <strong style="font-size:20px;color:#6e9910">History</strong>
+    <div style="background-color:#1a3221">
+     <strong style="font-size:20px;color:#81f8a7">Mathematica</strong>
     </div>
    </span>
    <span class="column-element">
-    <div style="background-color:#001702">
-     <strong style="font-size:20px;color:#02750a">Mathematica</strong>
-    </div>
-   </span>
-   <span class="column-element">
-    <div style="background-color:#1d2c29">
-     <strong style="font-size:20px;color:#93dccb; ">Unclassified</strong>
+    <div style="background-color:#0f291d">
+     <strong style="font-size:20px;color:#4dcc93; ">Unclassified</strong>
     </div>
    </span>
   </p>
@@ -47,72 +42,51 @@
   <div class="MyRecentPost">
    <p class="column">
     <span class="column-element">
-     <div style="background-color:#150002">
-      <strong style="font-size:20px;color:#670208">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Help/&#21338;&#23458;&#21151;&#33021;&#35774;&#35745;/&#21338;&#23458;&#21151;&#33021;&#35774;&#35745;.html">&#21338;&#23458;&#21151;&#33021;&#35774;&#35745;</a>
+     <div style="background-color:#1a261c">
+      <strong style="font-size:20px;color:#82be8d">
+       <a href="C:/Users/HyperGroups/Documents/MBlogSimple/Site/History/1361/1361.html">1361</a>
       </strong>
      </div>
     </span>
     <span class="column-element">
-     <div style="background-color:#27211b">
-      <strong style="font-size:20px;color:#c4a687">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Mathematica/WordCloud&#21021;&#29609;/WordCloud&#21021;&#29609;.html">WordCloud&#21021;&#29609;</a>
+     <div style="background-color:#02112a">
+      <strong style="font-size:20px;color:#0856d1">
+       <a href="C:/Users/HyperGroups/Documents/MBlogSimple/Site/Mathematica/AbsoluteTime&#25552;&#36895;&#25216;&#24039;/AbsoluteTime&#25552;&#36895;&#25216;&#24039;.html">AbsoluteTime&#25552;&#36895;&#25216;&#24039;</a>
       </strong>
      </div>
     </span>
     <span class="column-element">
-     <div style="background-color:#181c21">
-      <strong style="font-size:20px;color:#778ea6">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Mathematica/AbsoluteTime&#25552;&#36895;&#25216;&#24039;/AbsoluteTime&#25552;&#36895;&#25216;&#24039;.html">AbsoluteTime&#25552;&#36895;&#25216;&#24039;</a>
+     <div style="background-color:#1d0b01">
+      <strong style="font-size:20px;color:#933603">
+       <a href="C:/Users/HyperGroups/Documents/MBlogSimple/Site/Mathematica/Pages/Pages.html">Pages</a>
       </strong>
      </div>
     </span>
     <span class="column-element">
-     <div style="background-color:#150f09">
-      <strong style="font-size:20px;color:#69492d">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Mathematica/&#20998;&#21106;&#23376;&#21015;&#34920;/&#20998;&#21106;&#23376;&#21015;&#34920;.html">&#20998;&#21106;&#23376;&#21015;&#34920;</a>
+     <div style="background-color:#18121a">
+      <strong style="font-size:20px;color:#795984">
+       <a href="C:/Users/HyperGroups/Documents/MBlogSimple/Site/Mathematica/WordCloud&#21021;&#29609;/WordCloud&#21021;&#29609;.html">WordCloud&#21021;&#29609;</a>
       </strong>
      </div>
     </span>
     <span class="column-element">
-     <div style="background-color:#2f2b1a">
-      <strong style="font-size:20px;color:#ebd880">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Help/Help/Help.html">Help</a>
+     <div style="background-color:#1f2013">
+      <strong style="font-size:20px;color:#9d9f5e">
+       <a href="C:/Users/HyperGroups/Documents/MBlogSimple/Site/Pages/Pages.html">Pages</a>
       </strong>
      </div>
     </span>
     <span class="column-element">
-     <div style="background-color:#32160c">
-      <strong style="font-size:20px;color:#f96d3d">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Unclassified/HelloWorld/HelloWorld.html">HelloWorld</a>
+     <div style="background-color:#2e0632">
+      <strong style="font-size:20px;color:#e620f8">
+       <a href="C:/Users/HyperGroups/Documents/MBlogSimple/Site/Unclassified/SubGroupsTest/SubGroupsTest.html">SubGroupsTest</a>
       </strong>
      </div>
     </span>
     <span class="column-element">
-     <div style="background-color:#001e09">
-      <strong style="font-size:20px;color:#00972e">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Mathematica/&#21306;&#38388;&#20316;&#22270;&#19982;&#21306;&#38388;&#30340;&#30456;&#20132;/&#21306;&#38388;&#20316;&#22270;&#19982;&#21306;&#38388;&#30340;&#30456;&#20132;.html">&#21306;&#38388;&#20316;&#22270;&#19982;&#21306;&#38388;&#30340;&#30456;&#20132;</a>
-      </strong>
-     </div>
-    </span>
-    <span class="column-element">
-     <div style="background-color:#050f17">
-      <strong style="font-size:20px;color:#174a73">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Help/GitHub&#21338;&#23458;&#30340;&#22495;&#21517;&#32465;&#23450;/GitHub&#21338;&#23458;&#30340;&#22495;&#21517;&#32465;&#23450;.html">GitHub&#21338;&#23458;&#30340;&#22495;&#21517;&#32465;&#23450;</a>
-      </strong>
-     </div>
-    </span>
-    <span class="column-element">
-     <div style="background-color:#13251e">
-      <strong style="font-size:20px;color:#60b994">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Computer/Jekyll-1.4.3&#30340;&#19968;&#20010;&#38382;&#39064;/Jekyll-1.4.3&#30340;&#19968;&#20010;&#38382;&#39064;.html">Jekyll-1.4.3&#30340;&#19968;&#20010;&#38382;&#39064;</a>
-      </strong>
-     </div>
-    </span>
-    <span class="column-element">
-     <div style="background-color:#233225">
-      <strong style="font-size:20px;color:#adf8bb; ">
-       <a href="C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/Site/Computer/CSS&#26679;&#24335;&#21629;&#21517;&#19982;CSS&#25991;&#20214;&#21629;&#21517;&#21442;&#32771;&#34920;/CSS&#26679;&#24335;&#21629;&#21517;&#19982;CSS&#25991;&#20214;&#21629;&#21517;&#21442;&#32771;&#34920;.html">CSS&#26679;&#24335;&#21629;&#21517;&#19982;CSS&#25991;&#20214;&#21629;&#21517;&#21442;&#32771;&#34920;</a>
+     <div style="background-color:#1c0d11">
+      <strong style="font-size:20px;color:#8b4154; ">
+       <a href="C:/Users/HyperGroups/Documents/MBlogSimple/Site/Help/Help/Help.html">Help</a>
       </strong>
      </div>
     </span>

@@ -10,16 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12439,        313]
-NotebookOptionsPosition[     11899,        289]
-NotebookOutlinePosition[     12243,        304]
-CellTagsIndexPosition[     12200,        301]
+NotebookDataLength[     11800,        285]
+NotebookOptionsPosition[     11477,        270]
+NotebookOutlinePosition[     11745,        283]
+CellTagsIndexPosition[     11702,        280]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell["WordCloud\:521d\:73a9", "Title",
  CellChangeTimes->{{3.639038268893937*^9, 3.6390382753685303`*^9}}],
 
@@ -91,8 +89,6 @@ SA==
     PlotRange->{{0, 540}, {0, 494}}]}], ";"}]], "Input",
  CellChangeTimes->{{3.638972029950424*^9, 3.6389720405869465`*^9}, {
   3.638972368474084*^9, 3.6389723717894*^9}}],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"WordCloud", "[", 
@@ -258,37 +254,20 @@ Rule[StripOnInput, False]]\\)\"\>",
    "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> Automatic},
   PlotRange->{{-77.5, 77.5}, {-70.5, 70.5}}]], "Output",
  CellChangeTimes->{3.638972226733656*^9, 3.6389723779617796`*^9, 
-  3.6390383008305907`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"nb2Post", "[", 
-  RowBox[{
-   RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
-   RowBox[{"\"\<class\>\"", "\[Rule]", "\"\<Mathematica\>\""}]}], 
-  "]"}]], "Input",
- CellChangeTimes->{{3.6390383359845257`*^9, 3.639038341461424*^9}, {
-  3.639045158948189*^9, 3.639045176640724*^9}}],
+  3.6390383008305907`*^9}],
 
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"Export", "::", "noopen"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Cannot open \
+   RowBox[{"Export", "::", "noopen"}], "MessageName"], ":", 
+  " ", "\<\"Cannot open \
 \[NoBreak]\\!\\(\\\"C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/\
 Notebooks/Mathematica/WordCloud\\\\:521d\\\\:73a9.nb\\\"\\)\[NoBreak]. \\!\\(\
 \\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/noopen\\\", \
 ButtonNote -> \\\"Export::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.639045185740178*^9}]
-}, Open  ]]
-}, Open  ]]
 },
-WindowSize->{1536, 663},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -303,18 +282,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[CellGroupData[{
-Cell[580, 22, 106, 1, 134, "Title"],
-Cell[689, 25, 3751, 67, 148, "Input"],
-Cell[CellGroupData[{
-Cell[4465, 96, 876, 24, 75, "Input"],
-Cell[5344, 122, 5643, 138, 704, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[11024, 265, 304, 7, 45, "Input"],
-Cell[11331, 274, 540, 11, 35, "Message"]
-}, Open  ]]
-}, Open  ]]
+Cell[558, 20, 106, 1, 70, "Title"],
+Cell[667, 23, 3751, 67, 70, "Input"],
+Cell[4421, 92, 876, 24, 70, "Input"],
+Cell[5300, 118, 5643, 138, 70, "Output"],
+Cell[10946, 258, 527, 10, 70, "Message"]
 }
 ]
 *)
