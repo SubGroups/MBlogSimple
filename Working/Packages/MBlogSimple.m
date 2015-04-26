@@ -113,13 +113,16 @@ DeleteDirectory[#2,DeleteContents->True];CopyFile[#1,#2],CopyFile[#1,#2]]&;
 (*\:6b64\:76ee\:5f55\:4e3a\:624b\:52a8\:4fee\:6539\:ff0c\:6216Install\:65f6\:624b\:52a8\:8f93\:5165\:53d8\:91cf\:540e\:81ea\:52a8\:4fee\:6539\:3002*)
 
 
-dirBlogHome[AL]=pathFormatUnix@"C:\\Users\\HyperGroups\\Documents\\MBlogSimple";
+dirBlogHome[AL]=pathFormatUnix@"C:\\Users\\HyperGroups\\Documents\\GitHub\\MBlogSimple";
 
 
 dirBlogPush[AL]=dirBlogHome[AL];
 
 
 dirBlogSite[AL]=fileNameJoinUnix[{dirBlogHome[AL],"Site"}];
+
+
+dirBlogWorking[AL]=fileNameJoinUnix[{dirBlogHome[AL],"Working","Working"}];
 
 
 (*dirBlogPush[AL]=pathFormatUnix@fileNameJoinUnix@{$UserDocumentsDirectory,"GitHub","MBlogSimple"};
@@ -223,34 +226,24 @@ Export[StringReplace[indexFile,".old"->""],indexExport,"XML"];
 
 
 (* ::Text:: *)
-(*\:76ee\:524d\:7684\:8bbe\:8ba1\:4e2d\:ff0c\:65b0\:5efa\:7acb\:4e00\:7bc7\:65e5\:5fd7\:ff0c\:7136\:540e\:53d1\:5e03\:540e\:4f1a\:751f\:6210\:4e00\:4e2a\:7f51\:9875\:ff0c\:4f46\:662f\:5982\:679c\:628a\:4e00\:4e9b\:8001\:7684nb\:6587\:4ef6\:590d\:5236\:5230Notebooks\:6587\:4ef6\:5939\:ff0c\:5219\:53ef\:4ee5\:8c03\:7528\:6b64\:51fd\:6570\:91cd\:65b0\:5efa\:7ad9\:ff0c\:76f8\:5f53\:4e8e\:628a\:6240\:6709nb\:6587\:4ef6\:5747\:91cd\:65b0\:751f\:6210\:7f51\:9875\:ff0c\:6682\:65f6\:53ef\:80fd\:901f\:5ea6\:8f83\:6162\:3002\:6709\:662f\:5c31\:5149\:6805\:5316\:5355\:5143\:4e3a\:56fe\:7247\:7684\:65f6\:95f4\:4e0d\:5bb9\:6613\:6539\:8fdb\:ff0c\:5176\:4ed6\:6709\:4e00\:4e9b\:662f\:53ef\:4ee5\:540e\:671f\:4f18\:5316\:7684\:3002\:6bd4\:5982\:4e00\:7bc7\:65e5\:5fd710\:79d2\:949f\:ff0c\:90a3100\:7bc7\:53ef\:80fd\:5c31\:898116\:5206\:949f\:4e86\:ff0c\:5c31\:76f8\:5bf9\:8f83\:6162\:4e86\:3002*)
+(*\:76ee\:524d\:7684\:8bbe\:8ba1\:4e2d\:ff0c\:65b0\:5efa\:7acb\:4e00\:7bc7\:65e5\:5fd7\:ff0c\:7136\:540e\:53d1\:5e03\:540e\:4f1a\:751f\:6210\:4e00\:4e2a\:7f51\:9875\:ff0c\:4f46\:662f\:5982\:679c\:628a\:4e00\:4e9b\:8001\:7684nb\:6587\:4ef6\:590d\:5236\:5230Notebooks\:6587\:4ef6\:5939\:ff0c\:5219\:53ef\:4ee5\:8c03\:7528\:6b64\:51fd\:6570\:91cd\:65b0\:5efa\:7ad9\:ff0c\:76f8\:5f53\:4e8e\:628a\:6240\:6709nb\:6587\:4ef6\:5747\:91cd\:65b0\:751f\:6210\:7f51\:9875\:ff0c\:6682\:65f6\:53ef\:80fd\:901f\:5ea6\:8f83\:6162\:3002\:6709\:7684\:5730\:65b9\:ff0c\:6bd4\:5982\:5149\:6805\:5316\:5355\:5143\:4e3a\:56fe\:7247\:7684\:65f6\:95f4\:4e0d\:5bb9\:6613\:6539\:8fdb\:ff0c\:5176\:4ed6\:6709\:4e00\:4e9b\:662f\:53ef\:4ee5\:540e\:671f\:4f18\:5316\:7684\:3002\:6bd4\:5982\:4e00\:7bc7\:65e5\:5fd710\:79d2\:949f\:ff0c\:90a3100\:7bc7\:53ef\:80fd\:5c31\:898116\:5206\:949f\:4e86\:ff0c\:5c31\:76f8\:5bf9\:8f83\:6162\:4e86\:3002*)
+
+
+(* ::Text:: *)
+(*\:53ef\:4ee5\:6539\:8fdb\:7684\:662f\:5f15\:5165\:91cd\:540d\:6587\:4ef6\:7684\:81ea\:52a8\:91cd\:547d\:540d\:7b49\:3002force->True\:9009\:9879\:5c31\:4e0d\:4f1a\:5f39\:51fa\:76f8\:540c\:540d\:79f0\:7684nb\:6587\:4ef6\:5df2\:5b58\:5728\:7684\:95ee\:9898\:ff0c\:4f1a\:76f4\:63a5\:8986\:76d6\:539fnb\:6587\:4ef6\:3002*)
 
 
 Options[buildSite]={"force"->False};
 
 
-buildSite[x___,OptionsPattern[]]:=Module[{nb},
+buildSite[x___,OptionsPattern[]]:=Module[{nb,notebooksImported},
 
 notebooksImported=Import[#,"Notebook"]&/@
 filesSorted[Notebook];
-
-Do[nb=CreateDocument[notebooksImported[[i]]];nb2Post[nb,"class"->FileNameDrop@filesSortedRelative[Notebook][[i]],"force"->True];NotebookClose[nb];,{i,Length@notebooksImported}];
+var[Force]=OptionValue["force"];
+Do[nb=CreateDocument[notebooksImported[[i]]];If[var[Force]==True,nb2Post[nb,"class"->FileNameDrop[filesSortedRelative[Notebook][[i]]],"force"->True],nb2Post[nb,"class"->FileNameDrop[filesSortedRelative[Notebook][[i]]]]];NotebookClose[nb];,{i,Length@notebooksImported}];
 
 ]
-
-
-(* ::Text:: *)
-(*\:5f85\:5b8c\:5584\:ff0c\:4e3b\:8981\:662f\:5f15\:5165\:91cd\:540d\:7684\:5224\:65ad\:ff0c\:5728\:5f3a\:5236\:5efa\:7ad9\:548c\:4e0d\:5f3a\:5236\:5efa\:7ad9\:7684\:4e24\:79cd\:8bbe\:8ba1\:3002*)
-
-
-(*buildSiteForceFull[]:=Module[{nb},
-
-notebooksImported=Import[#,"Notebook"]&/@
-filesSorted[Notebook];
-
-Do[nb=CreateDocument[notebooksImported[[i]]];nb2Post[nb,"class"->FileNameDrop@filesSortedRelative[Notebook][[i]](*,"force"\[Rule]True*)];NotebookClose[nb];,{i,Length@notebooksImported}];
-
-]*)
 
 
 (* ::Subsection:: *)
@@ -262,17 +255,59 @@ Do[nb=CreateDocument[notebooksImported[[i]]];nb2Post[nb,"class"->FileNameDrop@fi
 (*\:6bd4\:5982\:ff0c\:624b\:52a8\:8fdb\:5165Notebook\:76f8\:5173\:76ee\:5f55\:5220\:9664\:4e00\:4e9b\:65e7\:7684\:65e5\:5fd7\:6587\:6863\:8fd9\:79cd\:64cd\:4f5c\:65f6\:3002*)
 
 
-cleanSite[]:=Module[{dirsKeep1,dirsKeep2,dirsKeep,dirsFull,dirsToDelete},
+cleanSite[]:=Module[{filesSorted,filesKeep,filesToDelete,dirsKeep,dirsToDelete,dirsExclude},
+(*\:5220\:9664Working\:76ee\:5f55\:4e0b\:7684\:65e0\:6548\:6587\:4ef6*)
+filesSorted[Working]=fileNameJoinUnix[{dirBlogWorking[AL],StringTrim[#,".nb"],FileBaseName[#]<>".html"}]&/@(filesSortedRelative[Notebook]//Flatten)//Union;
+filesKeep[Working]=Join[pathFormatUnix@FileNames["*.html",dirBlogWorking[AL]],filesSorted[Working]];
+filesToDelete[Working]=Complement[pathFormatUnix@FileNames["*.html",dirBlogWorking[AL],\[Infinity]],filesKeep[Working]];
+dirsToDelete[Working]=FileNameDrop/@filesToDelete[Working];
+(*\:5220\:9664Site\:76ee\:5f55\:4e0b\:7684\:65e0\:6548\:6587\:4ef6*)
+filesSorted[Site]=fileNameJoinUnix[{dirBlogSite[AL],StringTrim[#,".nb"],FileBaseName[#]<>".html"}]&/@(filesSortedRelative[Notebook]//Flatten)//Union;
+filesKeep[Site]=Join[pathFormatUnix@FileNames["*.html",dirBlogSite[AL]],filesSorted[Site]];
+filesToDelete[Site]=Complement[pathFormatUnix@FileNames["*.html",dirBlogSite[AL],\[Infinity]],filesKeep[Site]];
 
-dirsKeep1={pathFormatUnix@FileNameJoin[{dirBlogSite[AL],StringTrim[#,".nb"]}],pathFormatUnix@FileNameJoin[{dirBlogHome[AL],StringTrim[#,".nb"]}]}&/@filesSortedRelative[Notebook]//Flatten//Union;
-dirsKeep2=FixedPointList[FileNameDrop,#]&/@dirsKeep1;
-dirsKeep=(pathFormatUnix/@dirsKeep2//Flatten)//Union;
-dirsPushKeep=fileNameJoinUnix[{dirBlogHome[AL],#}]&/@{"Working","assets","HTMLFiles","Includes","Layout","Notebooks","Pages","Plugins","Site","stylesheets",".git"};
-dirsToDeleteHome[AL]=Complement[pathFormatUnix@Select[FileNames["*",dirBlogHome[AL],1],DirectoryQ],dirsPushKeep];
-dirsFull=(pathFormatUnix@Select[FileNames["*",{dirBlogSite[AL]},\[Infinity]],DirectoryQ[#]&])~Join~Select[dirsToDeleteHome[AL],FreeQ[FileBaseName/@filesSortedRelative[Notebook],(*\:8fd9\:91cc\:4f7f\:7528FileBaseName\:4f1a\:6709\:4e00\:4e2a\:95ee\:9898*)Last[FileNameSplit[#]]&@#]&];
-dirsToDelete=Complement[dirsFull,dirsKeep,dirsPushKeep];
-DeleteDirectory[dirsToDelete,DeleteContents->True];
+(*\:5220\:9664Push\:76ee\:5f55\:4e0b\:7684\:65e0\:6548\:6587\:4ef6,\:4ee5\:6587\:4ef6\:5939\:4e3a\:5355\:4f4d\:5220\:9664*)dirsExclude=Select[Import[fileNameJoinUnix[{dirBlogHome[AL],"exclude.txt"}],"List",CharacterEncoding->"CP936"],StringFreeQ[#,StartOfString~~"--"]&];
+filesSorted[Push]=fileNameJoinUnix[{dirBlogHome[AL],FileBaseName[#]<>"/index.html"}]&/@(filesSortedRelative[Notebook]//Flatten)//Union;
+dirsKeep0[Push]=pathFormatUnix[FileNameDrop[#]]&/@filesSorted[Push];
+dirsKeep[Push]=(fileNameJoinUnix[{dirBlogHome[AL],#}]&/@(dirsExclude~Join~{"Working","assets","HTMLFiles","Includes","Layout","Notebooks","Pages","Plugins","Site","stylesheets",".git"}))~Join~dirsKeep0[Push];
+dirsToDelete[Push]=Complement[Select[pathFormatUnix@FileNames["*",dirBlogHome[AL]],DirectoryQ],dirsKeep[Push]];
+
+DeleteFile[filesToDelete[Site]];
+DeleteDirectory[dirsToDelete[Working],DeleteContents->True];
+DeleteDirectory[dirsToDelete[Push],DeleteContents->True];
 ]
+
+
+(* ::Text:: *)
+(*\:6392\:9664\:4e00\:4e9b\:76ee\:5f55\:ff0c\:5220\:9664\:6ca1\:6709\:76f8\:5e94nb\:6587\:4ef6\:7684\:76ee\:5f55\:ff0c\:5220\:9664\:7a7a\:76ee\:5f55\:3002*)
+
+
+(* ::Text:: *)
+(*\:76ee\:524d\:7684\:8bbe\:8ba1\:4e2d\:ff0cSite\:76ee\:5f55\:53ea\:6709\:4e00\:4e2a\:7f51\:9875\:6587\:4ef6\:ff0c\:56e0\:6b64\:53ea\:8981\:628a\:7f51\:9875\:5220\:9664\:5373\:53ef\:3002*)
+
+
+(* ::Text:: *)
+(*\:6ce8\:610f\:6709\:4e2aBuildSite\:7684bug\:ff0c\:628a\:6240\:6709\:6587\:4ef6\:90fd\:91cd\:65b0\:653e\:5728Mathematica\:76ee\:5f55\:4e86\:3002*)
+
+
+(* ::Input:: *)
+(*cleanSiteTest[]:=Module[{},*)
+(*(*\:5220\:9664Working\:76ee\:5f55\:4e0b\:7684\:65e0\:6548\:6587\:4ef6*)*)
+(*filesSorted[Working]=fileNameJoinUnix[{dirBlogWorking[AL],StringTrim[#,".nb"],FileBaseName[#]<>".html"}]&/@(filesSortedRelative[Notebook]//Flatten)//Union;*)
+(*filesKeep[Working]=Join[pathFormatUnix@FileNames["*.html",dirBlogWorking[AL]],filesSorted[Working]];*)
+(*filesToDelete[Working]=Complement[pathFormatUnix@FileNames["*.html",dirBlogWorking[AL],\[Infinity]],filesKeep[Working]];*)
+(**)
+(*(*\:5220\:9664Site\:76ee\:5f55\:4e0b\:7684\:65e0\:6548\:6587\:4ef6*)*)
+(*filesSorted[Site]=fileNameJoinUnix[{dirBlogSite[AL],StringTrim[#,".nb"],FileBaseName[#]<>".html"}]&/@(filesSortedRelative[Notebook]//Flatten)//Union;*)
+(*filesKeep[Site]=Join[pathFormatUnix@FileNames["*.html",dirBlogSite[AL]],filesSorted[Site]];*)
+(*filesToDelete[Site]=Complement[pathFormatUnix@FileNames["*.html",dirBlogSite[AL],\[Infinity]],filesKeep[Site]];*)
+(**)
+(*(*\:5220\:9664Push\:76ee\:5f55\:4e0b\:7684\:65e0\:6548\:6587\:4ef6,\:4ee5\:6587\:4ef6\:5939\:4e3a\:5355\:4f4d\:5220\:9664*)dirsExclude=Select[Import[fileNameJoinUnix[{dirBlogHome[AL],"exclude.txt"}],"List",CharacterEncoding->"CP936"],StringFreeQ[#,StartOfString~~"--"]&];*)
+(*filesSorted[Push]=fileNameJoinUnix[{dirBlogHome[AL],FileBaseName[#]<>"/index.html"}]&/@(filesSortedRelative[Notebook]//Flatten)//Union;dirsKeep0[Push]=pathFormatUnix[FileNameDrop[#]]&/@filesSorted[Push];*)
+(*dirsKeep[Push]=(fileNameJoinUnix[{dirBlogHome[AL],#}]&/@(dirsExclude~Join~{"Working","assets","HTMLFiles","Includes","Layout","Notebooks","Pages","Plugins","Site","stylesheets",".git"}))~Join~dirsKeep0[Push];*)
+(*dirsToDelete[Push]=Complement[Select[pathFormatUnix@FileNames["*",dirBlogHome[AL]],DirectoryQ],dirsKeep[Push]];*)
+(**)
+(*]*)
 
 
 (* ::Subsection:: *)
@@ -293,7 +328,7 @@ Do[htmlFilesToExport=htmlFilesImported[[i]]/.XMLElement["div",{"class"->"span4"}
 Export[htmlFiles[[i]],htmlFilesToExport[[2]],"XML"],{i,Length@htmlFilesImported}];
 
 (*\:66f4\:65b0Push\:76ee\:5f55\:7684\:7f51\:9875\:ff0c\:5373MBlogSimple\:76ee\:5f55*)
-htmlFiles=Select[fileNameJoinUnix[{#,"index.html"}]&/@dirsToDeleteHome[AL],FileExistsQ];
+htmlFiles=Select[fileNameJoinUnix[{#,"index.html"}]&/@dirsKeep0[Push],FileExistsQ];
 htmlFilesImported=Import[#,"XMLObject"]&/@htmlFiles;
 (*\:4fa7\:8fb9\:680f\:7684\:8def\:5f84\:66f4\:65b0*)rules=XMLElement["a",{"href"->x__},y___]:>XMLElement["a",{"href"->StringJoin["/MBlogSimple/",FileBaseName@x]},y];
 rightBarNew=Import[fileRecentPost[AL],"XMLObject"][[2]]/.rules;
@@ -420,7 +455,7 @@ exportXML[fileRecentPost[AL],rightBarNew];
 (*Begin<===\[Equal]\:7528\:4e8e\:8def\:5f84\:66f4\:65b0*)
 rules1={XMLElement["body",{},y___]:>XMLElement["body",{},{topBarNew,XMLElement["div",{"class"->"container"},{XMLElement["div",{"class"->"content"},{XMLElement["div",{"class"->"row"},{XMLElement["div",{"class"->"span14"},y],rightBarNew}]}]}]}],XMLElement["title",{},{"\n  Untitled\n "}]:>Sequence[](*,rules2\:4e3a\:4ec0\:4e48\:653e\:5728\:8fd9\:91cc\:5c31\:5931\:6548\:ff1f*)};
 
-rules2Site={XMLElement["img",{"src"->path__,f__},{}]:>XMLElement["img",{"src"->path2Site[path],f},{}],XMLElement["a",{"href"->path__},{f__}]:>XMLElement["a",{"href"->path2Site[path]},{f}],XMLElement["a",{"class"->"brand","href"->path__},{"Hyper-Space"}]:>XMLElement["a",{"class"->"brand","href"->path2Site[path]},{"Sub-Space"}]};
+rules2Site={XMLElement["img",{"src"->path__,f__},{}]:>XMLElement["img",{"src"->path2Site[path],f},{}],XMLElement["a",{"href"->path__},{f__}]:>XMLElement["a",{"href"->path2Site[path]},{f}],XMLElement["a",{"class"->"brand","href"->path__},{"Hyper-Space"}]:>XMLElement["a",{"class"->"brand","href"->path2Site[path]},{"Hyper-Space"}]};
 (*\:56fe\:7247\:7684\:8def\:5f84\:66f4\:65b0\:4e3a\:7edd\:5bf9\:8def\:5f84\:ff0c\:4f7f\:7528Working\:76ee\:5f55\:7684\:8def\:5f84\:ff0c\:7701\:5f97Copy\:4e00\:4efdHTMLFiles\:ff0c\:540c\:65f6\:65b9\:4fbf\:4e0b\:4e00\:5c42\:81ea\:52a8\:8c03\:6574\:5927\:5c0f\:524d\:ff0c\:80fd\:8f93\:5165\:56fe\:7247,
 a\:6807\:7b7e\:7684\:8def\:5f84\:66f4\:65b0\:ff0c\:6bd4\:5982topBar\:4e2d\:7684*)
 

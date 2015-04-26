@@ -1,0 +1,322 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12439,        313]
+NotebookOptionsPosition[     11899,        289]
+NotebookOutlinePosition[     12243,        304]
+CellTagsIndexPosition[     12200,        301]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["WordCloud\:521d\:73a9", "Title",
+ CellChangeTimes->{{3.639038268893937*^9, 3.6390382753685303`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"shape", "=", 
+   GraphicsBox[
+    TagBox[RasterBox[CompressedData["
+1:eJzt3EGOHFkZhdE0YsAimLAUWEKzgm4JpkgNEupNswbabhtsV9yqysyIuPHe
+O2dQKsuTevf/JlmD+tNP//jh77+73W7//MOvX3748d9//vnnH3/56+9//cdf
+fvnX3376+F//+XC7/fHjNwDD+bCp/VOdyQLf2J5jqY1MsOGOUWYdxwQvPDDJ
+bPOY4KUnN5liHBts2GuUkaexwUv7bjLmNjbYcMwoQ21jgk2HzjLIMjbYcPQo
+I0xjgw3njHLtaWyw6cxZLrqMCbacvMoVtzHBlsoqF5vGBpt6s1xnGBtsaa5y
+kWnaC1xggg3tUX5jg/YGG9qDfGGDq8XRXuNrNrhSHe0lvmeDy9TRnuElG1wj
+jvYG22zQr6P9/swG5Traj3+NDapxtJ/+BhP40BbZoFRH+9HvYgIf2iIbnF5H
++7l3MMG5cbQfexcT+EAf2eC0OtrPfIAJzomj/chH2OCUONpPfJAJDo+j/b7H
+2cBveyITHNtG+3FPMcGBcbRf9jQTHFVH+1k7MMExcbQftQsTHBFH+0k7McH+
+cbQftBsT7B1H+zk7MsGeYcy0y4dHp2n/1LvSRmIBaUQWUEZkAr8ljiwgjcgC
+0ogsII3IAtpILCCNyALSiCwgjcgC0ogsoI3EAtLIDCCNyADaSAwgjcgA0ogM
+oI3EANKIDCCNyADaiLxfGokBpBEZQBuJAbSReb40Eu/XRuT50ki8XxqR92sj
+8nxpJN6vjWj552sjWv750iCQBpE2SLRBIg0ibZBog0QaRNIg0gaJNki0QSIN
+Im2QaINEGkTSINIGiTZItEGiDRJpEGmDRBsk2iCRBpE2SLRBIg0ibZBog0Qb
+JNogkQaRNki0QaINEm2QaINEGyTaIJEGkTZItEGiDRJtkEiDSBsk2iDRBok2
+SLRBog0SbZBog0QbJNog0QaJNki0QaINEm2QaINEGyTaINEGiTZItEGiDRJt
+kGiDRBsk2iDRBok2SLRBog0SbZBog0QbJNog0QaJNki0QeIPBRL4+6Ik2iDR
+Bok2SLRBog0SbZDcxMG2mzYItEGiDRJtkGiDRBsk2iDRBok2SLRBchMH227a
+INAGiTZItEGiDRJtkGiD5CYOtt20QaANEm2Q3MTBtps2CLRBog0SbZBog+Qm
+DrbdtEGgDRJtkGiD5Ps2xMFnL9LQBp9pg+RlG+Lgk400tMEn2iDRBslWG+Lg
+Q0hDG3zQBpk2SLRBst2GOEhpaIPYhjiWF9PQxvK0QaINktyGOBb3ShraWJw2
+SF5rQxxLezUNbSzt9TbEsbA30tDGwrRB8lYb4ljWm2loY1naIHm7DXEs6h1p
+aGNR72lDHEt6VxraWNL72hDHgt6ZhjYWpA2S97YhjuW8Ow1xrOaONLSxGG2Q
+3NOGOJZyVxraWMp9bYhjIXemIY513J2GNpahDZL72xDHIh5IQxuLeKQNcSzh
+oTTEsYIH09DGAh5tQxzTezgNbUxPGySPtyGOyT2Rhjjm9lQa2pjac22IY2JP
+piGOeT2dhjam9Xwb4pjUDmmIY067pKGNKe3ThjgmtFMa4pjPbmloYzr7tSGO
+yeyYhjYms2cb4pjKrmmIYyY7pyGOeeyehjamsX8b4pjEAWmIYw6HpKGNKRzT
+hjgmcFAa4hjfYWmIY3QHpiGOsR2ahjaGdmwb4hjYwWmIY1yHpyGOUZ2QhjYG
+dUYb6hjROWVoY0RntSGO4ZyWhjhGc2Ia4hjLqWloYyjntiGOgZychjqGcX4Z
+2hhFow1xDKGShjhGUEpDHNdXS0McV1dMQxzXVk1DHFdWTkMbF9ZuQxyX1S7j
+Jo6ranfxSXsEtrSr+Kw9Ay+1m/if9hB8r13EV9pT8K12D99oj8HX2jV8pz0H
+/9du4YX2IHzRLmFDexJ+0+5gU3sUPmpXELRn4bJpiKOvXcAr2tOsrn3/V7XH
+WVv7+m9oz7Oy9u3f1B5oXe3Lv0N7olW17/4u7ZHW1L76O7VnWlH75u/WHmo9
+7YvfoT3Vatr3vkt7rLW0r32n9lwrad/6bu3B1tG+9APak62ifeeHtEdbQ/vK
+D2rPtoL2jR/XXm527fs+pT3e3NrXfVJ7vpm1b/u09oDzal92B+0JZ9W+6y7a
+I86pfdWdtGecUfumu2kPOZ/2RffU3nIu7Wvuq73mXNrX3Fl7zpm0b7m/9qKz
+aN/xCO1NZ9G+4zHaq86gfcPDtIcdX/uCB2pPO7r2/Q7VHnds7esdrD3vyNq3
+O1x74HG1L3eG9sZjal/tJO2ZR9S+2VnaO4+ofbPztJceTftep2qPPZb2tU7W
+nnsk7Vudrj34ONqXKmhPPor2nTraq4+gfaOa9vDX175QUXv6q2vfp6o9/rW1
+r1PWnv/K2rfpa1/gqtp3uYL2Da6qfZdLaB/hmtpXuYr2Ha6nfZELaZ/iatr3
+uJT2Ma6lfY2LaZ/jStq3uJz2Qa6jfYkrat/kGtpXuKj2Wa6gfYOrat/lCto3
+uK72Zdra+19a+zhd7fUvrn2epvb2l9c+UE97+RG0b9TRXn0Q7TM1tDcfRvtQ
+52svPpD2qc7W3nso7WOdq732YNrnOlN76/G0L3aW9s4jat/sLO2dx9S+2hna
+Gw+rfbjjtRceWPt0R2vvO7T28Y7VXnd07fsdp73s+NoXPE572Rm0b3iM9qqT
+aJ/xCO1Np9E+5P7ai06kfcq9tfecSvuY+2qvOZn2OffU3nI+7Yvupb3jlNpH
+3Ud7xUm1z7qH9obTah/2ee0FZ9a+7XPa682tfd3ntNebXPu8z2hvN7/2hR/V
+3m0J7SM/pr3aItpnfkR7s2W0D32/9mILaZ/6Xu291tK+9j3aWy2nffD3ay+1
+nvbF36+91IraN3+f9kqLap/9PdobLat9+Le1F1pY+/Rvae+ztPbxX9deZ3Ht
+87+mvQ3tApL2LtyuGkd7FT5pZ7ClvQmftUN4qb0I/9du4VvtNfhau4Zvtdfg
+G+0cvtbegu+1i/iivQMvtZv4or0DW9pVfNTegKAdhjQuTBpE0iBTBok2yJRB
+JA0SbZApg0gaRNIgkgaRNIikQaYMImkQSYNIGkTSIJIGkTTIlEGiDSJpkCmD
+RBtkyiCSBpE0iKRBJA0iaZApg0gaJNogUwaRNEi0QaYMImkQSYNIGkTSIJIG
+kTSIpEEkDTJlEEmDSBpE0iCSBpE0iKRBJA0iaRBJg0wZJNogkgbAU/4L6ALN
+SA==
+      "], {{0, 494}, {540, 0}}, {0, 1},
+      ColorFunction->GrayLevel],
+     BoxForm`ImageTag["Bit", ColorSpace -> Automatic, Interleaving -> None],
+     Selectable->False],
+    BaseStyle->"ImageGraphics",
+    ImageSizeRaw->{540, 494},
+    PlotRange->{{0, 540}, {0, 494}}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.638972029950424*^9, 3.6389720405869465`*^9}, {
+  3.638972368474084*^9, 3.6389723717894*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WordCloud", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"ToString", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"#", ",", 
+            RowBox[{"RandomColor", "[", "]"}]}], "]"}], ",", "StandardForm"}],
+          "]"}], "&"}], "/@", 
+       RowBox[{"Table", "[", 
+        RowBox[{"\[FilledCircle]", ",", 
+         RowBox[{"{", "10", "}"}]}], "]"}]}], ",", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "10"}], "}"}], ",", "10"}], "]"}]}], "}"}], "//", 
+    "Transpose"}], ",", "shape", ",", 
+   RowBox[{"ImageSize", "\[Rule]", "500"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6389712489824224`*^9, 3.6389712489834228`*^9}, {
+   3.6389713189939413`*^9, 3.638971327013627*^9}, 3.6389717949549456`*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.40357432952003824`, 0.7384851607360943`, 0.832465682766605`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.45161290322580644`],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.368417, 0.506779, 0.709798]], 
+     NCache[{Rational[-1, 2], Rational[1, 2]}, {-0.5, 0.5}]], InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.7923882209169271`, 0.46204059416258225`, 0.6016032870655335`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.4032258064516129],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.880722, 0.611041, 0.142051]], 
+     NCache[{Rational[-93, 2], Rational[25, 2]}, {-46.5, 12.5}]], InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.5931650342426316`, 0.5598875831996064`, 0.7925445472311341`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.3548387096774194],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.560181, 0.691569, 0.194885]], 
+     NCache[{Rational[93, 2], Rational[7, 2]}, {46.5, 3.5}]], InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.2141678940124352`, 0.27694212379434013`, 0.8741475677386836`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.3064516129032258],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.922526, 0.385626, 0.209179]], 
+     NCache[{Rational[35, 2], Rational[85, 2]}, {17.5, 42.5}]], InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.7539644837720798`, 0.35179030615520324`, 0.24260334775918735`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.3064516129032258],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.772079, 0.431554, 0.102387]], 
+     NCache[{Rational[3, 2], Rational[-77, 2]}, {1.5, -38.5}]], InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.2603300916021636`, 0.8539778206003197`, 0.6720835804612981`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.3064516129032258],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.528488, 0.470624, 0.701351]], 
+     NCache[{Rational[-49, 2], Rational[103, 2]}, {-24.5, 51.5}]], InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.5419980332302563`, 0.005495618205154429`, 0.13774750447711392`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.25806451612903225`],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.363898, 0.618501, 0.782349]], 
+     NCache[{Rational[103, 2], Rational[75, 2]}, {51.5, 37.5}]], InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.7075095940311611`, 0.09313351041891993`, 0.6758500059199417`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.20967741935483872`],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[1, 0.75, 0]], 
+     NCache[{Rational[-109, 2], Rational[95, 2]}, {-54.5, 47.5}]], InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.7292701741877015`, 0.20081503381583388`, 0.4730711294853014`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.06451612903225806],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.571589, 0.586483, 0.]], 
+     NCache[{Rational[-55, 2], Rational[-33, 2]}, {-27.5, -16.5}]], InsetBox[
+     StyleBox[
+      RotationBox["\<\"\\!\\(\\*StyleBox[\\\"\[FilledCircle]\\\", \
+RGBColor[0.6590042666906337`, 0.30584828949816467`, 0.5336786272483849`], \
+Rule[StripOnInput, False]]\\)\"\>",
+       BoxRotation->0.],
+      StripOnInput->False,
+      FontFamily->"Helvetica",
+      FontSize->Scaled[0.06451612903225806],
+      FontWeight->Plain,
+      FontSlant->Plain,
+      FontTracking->"Plain",
+      FontColor->RGBColor[0.647624, 0.37816, 0.614037]], 
+     NCache[{Rational[57, 2], Rational[-39, 2]}, {28.5, -19.5}]]}},
+  Background->GrayLevel[0, 0],
+  ImageSize->500,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> Automatic},
+  PlotRange->{{-77.5, 77.5}, {-70.5, 70.5}}]], "Output",
+ CellChangeTimes->{3.638972226733656*^9, 3.6389723779617796`*^9, 
+  3.6390383008305907`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"nb2Post", "[", 
+  RowBox[{
+   RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+   RowBox[{"\"\<class\>\"", "\[Rule]", "\"\<Mathematica\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6390383359845257`*^9, 3.639038341461424*^9}, {
+  3.639045158948189*^9, 3.639045176640724*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Export", "::", "noopen"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot open \
+\[NoBreak]\\!\\(\\\"C:/Users/HyperGroups/Documents/GitHub/MBlogSimple/\
+Notebooks/Mathematica/WordCloud\\\\:521d\\\\:73a9.nb\\\"\\)\[NoBreak]. \\!\\(\
+\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/noopen\\\", \
+ButtonNote -> \\\"Export::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.639045185740178*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1536, 663},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 106, 1, 134, "Title"],
+Cell[689, 25, 3751, 67, 148, "Input"],
+Cell[CellGroupData[{
+Cell[4465, 96, 876, 24, 75, "Input"],
+Cell[5344, 122, 5643, 138, 704, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11024, 265, 304, 7, 45, "Input"],
+Cell[11331, 274, 540, 11, 35, "Message"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
