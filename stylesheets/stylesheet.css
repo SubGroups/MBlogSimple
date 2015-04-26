@@ -223,11 +223,14 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  border-top: solid 1px #eff0f1;
+  color:red;
+ }
 
 .site-footer-owner {
   display: block;
-  font-weight: bold; }
+  font-weight: bold;
+ color:yellow;  }
 
 .site-footer-credits {
   color: #819198; }

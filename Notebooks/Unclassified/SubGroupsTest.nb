@@ -1,0 +1,66 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1828,         57]
+NotebookOptionsPosition[      1514,         42]
+NotebookOutlinePosition[      1782,         55]
+CellTagsIndexPosition[      1739,         52]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["SubGroupsTest", "Title",
+ CellChangeTimes->{{3.6390229290267954`*^9, 3.6390229325893226`*^9}, {
+  3.6390229780606656`*^9, 3.639022980059084*^9}}],
+
+Cell["\:6587\:4ef6\:540d\:548cTitle\:6700\:597d\:53d6\:4e00\:6837\:54e6\:ff0c\
+\:4e0d\:7136\:53ef\:80fd\:6709\:5947\:602a\:7684\:95ee\:9898", "Section",
+ CellChangeTimes->{{3.6390229358567305`*^9, 3.6390229361709547`*^9}, {
+  3.639022981552146*^9, 3.639022992968255*^9}}],
+
+Cell["Windows\:7684GitHub\:5728\:7ebf\:5b89\:88c5\:4e0b\:8f7d\:5305\:771f\
+\:662f\:592a\:6162\:4e86\:ff0c\:7b80\:76f4\:5751\:7239", "Section",
+ CellChangeTimes->{{3.63902293797023*^9, 3.639022957613162*^9}}],
+
+Cell["11111", "Section",
+ CellChangeTimes->{{3.639022971961342*^9, 3.6390229726398225`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"<<", 
+  "\"\<C:\\\\Users\\\\HyperGroups\\\\Documents\\\\MBlogSimple\\\\Working\\\\\
+Packages\\\\MBlogSimple.m\>\""}]], "Input",
+ CellChangeTimes->{{3.639023015016881*^9, 3.6390230374287786`*^9}}]
+},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 151, 2, 70, "Title"],
+Cell[712, 24, 271, 3, 70, "Section"],
+Cell[986, 29, 207, 2, 70, "Section"],
+Cell[1196, 33, 92, 1, 70, "Section"],
+Cell[1291, 36, 219, 4, 70, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

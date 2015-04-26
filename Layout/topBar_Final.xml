@@ -1,20 +1,20 @@
   <div class="topbar">
     <div class="fill">
       <div class="container">
-        <a class="brand" href="/">Hyper-Space</a>
+        <a class="brand" href="/MBlogSimple">Hyper-Space</a>
 
         <ul class="nav">
           <li>
-            <a href="/archive.html">Archive</a>
+            <a href="/MBlogSimple/archive.html">Archive</a>
           </li>
           <li>
-            <a href="/categories.html">Categories</a>
+            <a href="/MBlogSimple/categories.html">Categories</a>
           </li>
           <li>
-            <a href="/pages.html">Pages</a>
+            <a href="/MBlogSimple/pages.html">Pages</a>
           </li>
           <li>
-            <a href="/tags.html">Tags</a>
+            <a href="/MBlogSimple/tags.html">Tags</a>
           </li>
         </ul>
       </div>
